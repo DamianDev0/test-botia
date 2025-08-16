@@ -30,18 +30,29 @@ export function BaseController<
     @Post()
     @ApiBody({ type: createDtoClass })
     @UsePipes(new ValidationPipe({ whitelist: true }))
-    async create(@Body() dto: CreateDto, @Headers('key') key: string) {
-      return this.service.createWithAuth(dto, key, resourceName);
+    async create(
+      @Body() dto: CreateDto,
+      @Headers('key') key: string,
+      @Headers('schema') schema = 'public',
+    ) {
+      return this.service.createWithAuth(dto, key, resourceName, schema);
     }
 
     @Get()
-    async getAll(@Headers('key') key: string) {
-      return this.service.findAllWithAuth(key, resourceName);
+    async getAll(
+      @Headers('key') key: string,
+      @Headers('schema') schema = 'public',
+    ) {
+      return this.service.findAllWithAuth(key, resourceName, schema);
     }
 
     @Get('/by-id')
-    async getOne(@Headers('key') key: string, @Query('id') id: string) {
-      return this.service.findOneWithAuth(id, key, resourceName);
+    async getOne(
+      @Headers('key') key: string,
+      @Query('id') id: string,
+      @Headers('schema') schema = 'public',
+    ) {
+      return this.service.findOneWithAuth(id, key, resourceName, schema);
     }
 
     @Patch()
@@ -51,12 +62,14 @@ export function BaseController<
       @Headers('key') key: string,
       @Query('id') id: string,
       @Body() dto: UpdateDto,
+      @Headers('schema') schema = 'public',
     ) {
       return this.service.updateWithAuth(
         id,
         dto as unknown as QueryDeepPartialEntity<T>,
         key,
         resourceName,
+        schema,
       );
     }
   }
