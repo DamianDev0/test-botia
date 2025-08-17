@@ -67,6 +67,16 @@ Ensure all tenant schemas have the same tables as the `public` schema:
 $ npm run sync:schemas ferrolaminas macrollantas
 ```
 
+## Selecting a tenant schema
+
+Every Macrollantas endpoint can target a specific tenant by sending a `schema`
+HTTP header. If omitted, the application falls back to the default `public`
+schema.
+
+```
+curl -H "key: <api-key>" -H "schema: ferrolaminas" https://api.example.com/config-citas
+```
+
 ## Resources
 
 Check out a few resources that may come in handy when working with NestJS:

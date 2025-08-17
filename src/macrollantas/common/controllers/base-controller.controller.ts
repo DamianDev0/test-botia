@@ -12,6 +12,7 @@ import {
 import { ApiBody, ApiTags } from '@nestjs/swagger';
 import { BaseEntity, DeepPartial } from 'typeorm';
 import { BaseAuthenticatedService } from '../services/base-authenticated.service';
+import { Schema } from '../decorators/schema.decorator';
 import { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity';
 
 export function BaseController<
@@ -33,16 +34,13 @@ export function BaseController<
     async create(
       @Body() dto: CreateDto,
       @Headers('key') key: string,
-      @Headers('schema') schema = 'public',
+      @Schema() schema: string,
     ) {
       return this.service.createWithAuth(dto, key, resourceName, schema);
     }
 
     @Get()
-    async getAll(
-      @Headers('key') key: string,
-      @Headers('schema') schema = 'public',
-    ) {
+    async getAll(@Headers('key') key: string, @Schema() schema: string) {
       return this.service.findAllWithAuth(key, resourceName, schema);
     }
 
@@ -50,7 +48,7 @@ export function BaseController<
     async getOne(
       @Headers('key') key: string,
       @Query('id') id: string,
-      @Headers('schema') schema = 'public',
+      @Schema() schema: string,
     ) {
       return this.service.findOneWithAuth(id, key, resourceName, schema);
     }
@@ -62,7 +60,7 @@ export function BaseController<
       @Headers('key') key: string,
       @Query('id') id: string,
       @Body() dto: UpdateDto,
-      @Headers('schema') schema = 'public',
+      @Schema() schema: string,
     ) {
       return this.service.updateWithAuth(
         id,
