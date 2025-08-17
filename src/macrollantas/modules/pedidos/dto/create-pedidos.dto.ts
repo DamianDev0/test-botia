@@ -5,7 +5,7 @@ export class CreatePedidosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NIT: string;
+  nit: string;
 
   @IsOptional()
   @IsString()
@@ -15,12 +15,12 @@ export class CreatePedidosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  BODEGA: string;
+  bodega: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  IVA: number;
+  iva: number;
 
   @IsOptional()
   @IsString()
@@ -30,92 +30,92 @@ export class CreatePedidosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TEMP: string;
+  temp: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE: string;
+  nombre: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  OBSERVACIONES: string;
+  observaciones: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MERCADEO: number;
+  mercadeo: number;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHACREACION: Date;
+  fechacreacion: Date;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  IMPRESO: number;
+  impreso: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MES: string;
+  mes: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  LIQUIDAR: number;
+  liquidar: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ROMBO: string;
+  rombo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VENDEDOR: string;
+  vendedor: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ESPERA: number;
+  espera: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PATIO: number;
+  patio: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VALORAPROBADO: number;
+  valoraprobado: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TITULO: string;
+  titulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CLAVEUSUARIO: string;
+  claveusuario: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CERRADA: number;
+  cerrada: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  KILOMETRAJE: number;
+  kilometraje: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ANULADO: number;
+  anulado: number;
 
   @IsOptional()
   @IsNumber()
@@ -125,25 +125,25 @@ export class CreatePedidosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TELEFONO: string;
+  telefono: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_MOVIMIENTO: string;
+  idMovimiento: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PLACA: string;
+  placa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VALOR: number;
+  valor: number;
 }

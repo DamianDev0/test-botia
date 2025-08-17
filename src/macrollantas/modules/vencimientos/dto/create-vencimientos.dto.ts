@@ -11,7 +11,7 @@ export class CreateVencimientosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsDateString()
@@ -26,7 +26,7 @@ export class CreateVencimientosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
@@ -36,12 +36,12 @@ export class CreateVencimientosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NICHO: string;
+  nicho: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PLACA: string;
+  placa: string;
 
   @IsOptional()
   @IsNumber()
@@ -51,7 +51,7 @@ export class CreateVencimientosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SERVICIO: string;
+  servicio: string;
 
   @IsOptional()
   @IsString()
@@ -61,7 +61,7 @@ export class CreateVencimientosDto {
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsDateString()
@@ -71,12 +71,12 @@ export class CreateVencimientosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  USABILIDAD: string;
+  usabilidad: string;
 
   @IsOptional()
   @IsString()

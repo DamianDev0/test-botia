@@ -3,13 +3,13 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_cotizacion_det')
 export class TraCotizacionDet extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ name: 'NUMERO ASOCIADO', nullable: true })
   'NUMERO ASOCIADO': string | null;
 
   @Column({ nullable: true })
-  COMPONENTE: string | null;
+  componente: string | null;
 
   @Column({ name: 'CANTIDAD PEN', nullable: true })
   'CANTIDAD PEN': number | null;
@@ -24,46 +24,46 @@ export class TraCotizacionDet extends BaseEntity {
   'CANTIDAD EXI': number | null;
 
   @Column({ nullable: true })
-  NOTAS1: string | null;
+  notas1: string | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 
   @Column({ nullable: true })
-  DESCRIPCION: string | null;
+  descripcion: string | null;
 
   @Column({ nullable: true })
-  OPERACION: string | null;
+  operacion: string | null;
 
   @Column({ nullable: true })
-  CODIGO: string | null;
+  codigo: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ nullable: true })
-  NOTAS2: string | null;
+  notas2: string | null;
 
   @Column({ nullable: true })
-  UNIDAD: string | null;
+  unidad: string | null;
 
   @Column({ default: true })
-  APROBACION: boolean;
+  aprobacion: boolean;
 
   @Column({ nullable: true })
-  TECNICO: string | null;
+  tecnico: string | null;
 
   @Column({ nullable: true })
-  CANTIDAD: number | null;
+  cantidad: number | null;
 
   @Column({ nullable: true })
-  TIEMPO: number | null;
+  tiempo: number | null;
 
   @Column({ name: 'NUMERO FACTURA', nullable: true })
   'NUMERO FACTURA': string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ name: 'CANTIDAD PED', nullable: true })
   'CANTIDAD PED': number | null;
@@ -72,16 +72,16 @@ export class TraCotizacionDet extends BaseEntity {
   'CANTIDAD PLA': number | null;
 
   @Column({ nullable: true })
-  ACCION: string | null;
+  accion: string | null;
 
   @Column({ nullable: true })
-  ORIGEN: string | null;
+  origen: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  NOTAS: string | null;
+  notas: string | null;
 
   @Column({ name: 'VRU ORIGINAL', nullable: true })
   'VRU ORIGINAL': number | null;
@@ -90,7 +90,7 @@ export class TraCotizacionDet extends BaseEntity {
   'CANTIDAD DES': number | null;
 
   @Column({ nullable: true })
-  IVA: number | null;
+  iva: number | null;
 
   @Column({ name: 'NOMBRE PROVEEDOR', nullable: true })
   'NOMBRE PROVEEDOR': string | null;
@@ -105,7 +105,7 @@ export class TraCotizacionDet extends BaseEntity {
   'DESCRIPCION 2': string | null;
 
   @Column({ nullable: true })
-  ID_TRA_COTIZACION: string | null;
+  idTraCotizacion: string | null;
 
   @Column({ name: 'VRT HOMOLOGADO', nullable: true })
   'VRT HOMOLOGADO': number | null;

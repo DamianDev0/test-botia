@@ -3,35 +3,35 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('see_mediciones')
 export class SeeMediciones extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   AÑO: number | null;
 
   @Column({ nullable: true })
-  MES: number | null;
+  mes: number | null;
 
   @Column({ nullable: true })
-  ID_DISPOSITIVO: string | null;
+  idDispositivo: string | null;
 
   @Column({ nullable: true })
-  PROMEDIO: number | null;
+  promedio: number | null;
 
   @Column({ nullable: true })
-  DIA: number | null;
+  dia: number | null;
 
   @Column({ nullable: true })
-  MINIMO: number | null;
+  minimo: number | null;
 
   @Column({ nullable: true })
-  HORA: number | null;
+  hora: number | null;
 
   @Column({ nullable: true })
-  MAXIMO: number | null;
+  maximo: number | null;
 
   @Column({ nullable: true })
-  ID_VARIABLE: string | null;
+  idVariable: string | null;
 
   @Column({ nullable: true })
-  FRECUENCIA: string | null;
+  frecuencia: string | null;
 }

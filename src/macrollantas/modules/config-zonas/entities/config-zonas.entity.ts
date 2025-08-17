@@ -3,32 +3,32 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG ZONAS')
 export class ConfigZonas extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  COLUMNAS: number | null;
+  columnas: number | null;
 
   @Column({ nullable: true })
-  PANEL: number | null;
+  panel: number | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  FILAS: number | null;
+  filas: number | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  ZONA: string | null;
+  zona: string | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 
   @Column({ nullable: true })
-  CANTIDAD: number | null;
+  cantidad: number | null;
 
   @Column({ nullable: true })
-  ALINEACION: string | null;
+  alineacion: string | null;
 }

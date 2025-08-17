@@ -5,17 +5,17 @@ export class CreateTraCotizacionTotDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
@@ -25,7 +25,7 @@ export class CreateTraCotizacionTotDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TOTAL: number;
+  total: number;
 
   @IsOptional()
   @IsString()
@@ -35,20 +35,20 @@ export class CreateTraCotizacionTotDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_TRA_COTIZACION: string;
+  idTraCotizacion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONCEPTO: string;
+  concepto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NUMERO: string;
+  numero: string;
 }

@@ -5,20 +5,20 @@ export class CreateConfigTableDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DATABASE: string;
+  database: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TABLA: string;
+  tabla: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 }

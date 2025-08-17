@@ -5,7 +5,7 @@ export class CreateMotivosAnulacionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_empresa: string;
+  codEmpresa: string;
 
   @IsOptional()
   @IsString()

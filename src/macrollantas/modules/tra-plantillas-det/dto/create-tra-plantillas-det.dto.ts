@@ -5,47 +5,47 @@ export class CreateTraPlantillasDetDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CANTIDAD: number;
+  cantidad: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_TRA_PLANTILLA: string;
+  idTraPlantilla: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TIEMPO: number;
+  tiempo: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  NUMERO: number;
+  numero: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  IVA: number;
+  iva: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOTAS: string;
+  notas: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COMPONENTE: string;
+  componente: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsNumber()
@@ -60,7 +60,7 @@ export class CreateTraPlantillasDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsNumber()
@@ -80,27 +80,27 @@ export class CreateTraPlantillasDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ORIGEN: string;
+  origen: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  APROBACION: string;
+  aprobacion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CODIGO: string;
+  codigo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DESCRIPCION: string;
+  descripcion: string;
 
   @IsOptional()
   @IsNumber()
@@ -110,5 +110,5 @@ export class CreateTraPlantillasDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  UNIDAD: string;
+  unidad: string;
 }

@@ -5,17 +5,17 @@ export class CreateTraPlantillasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
@@ -25,7 +25,7 @@ export class CreateTraPlantillasDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TIEMPO: number;
+  tiempo: number;
 
   @IsOptional()
   @IsDateString()
@@ -35,7 +35,7 @@ export class CreateTraPlantillasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsString()
@@ -50,25 +50,25 @@ export class CreateTraPlantillasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MARCA: string;
+  marca: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONCEPTO: string;
+  concepto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PARTE: string;
+  parte: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NUMERO: string;
+  numero: string;
 }

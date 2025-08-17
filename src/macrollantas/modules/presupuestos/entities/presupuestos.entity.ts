@@ -3,10 +3,10 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('PRESUPUESTOS')
 export class Presupuestos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ name: 'HORA FIN', nullable: true })
   'HORA FIN': number | null;
@@ -18,13 +18,13 @@ export class Presupuestos extends BaseEntity {
   'PTO HORA': number | null;
 
   @Column({ nullable: true })
-  PROCESO: string | null;
+  proceso: string | null;
 
   @Column({ nullable: true })
-  TEMPORADA: string | null;
+  temporada: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ name: 'NUMERO DIA', nullable: true })
   'NUMERO DIA': number | null;
@@ -36,5 +36,5 @@ export class Presupuestos extends BaseEntity {
   'HORA INICIO': number | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 }

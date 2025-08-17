@@ -3,23 +3,23 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG UBICACION')
 export class ConfigUbicacion extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ default: true })
-  ESTADO: boolean;
+  estado: boolean;
 
   @Column({ nullable: true })
-  CAMPO: string | null;
+  campo: string | null;
 
   @Column({ nullable: true })
-  LONGITUD: number | null;
+  longitud: number | null;
 }

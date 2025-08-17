@@ -5,25 +5,25 @@ export class CreateFormaPagoDto {
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  PLAZO?: number;
+  plazo?: number;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  SUCURSAL?: string;
+  sucursal?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  NOMBRE?: string;
+  nombre?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  NICHO?: string;
+  nicho?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  EMPRESA?: string;
+  empresa?: string;
 }

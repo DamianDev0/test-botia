@@ -10,5 +10,5 @@ export class CreateCollectionsDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COLECCION: string;
+  coleccion: string;
 }

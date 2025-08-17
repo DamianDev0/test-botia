@@ -3,38 +3,38 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('see_variables')
 export class SeeVariables extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  DESCRIPCION: string | null;
+  descripcion: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  AREA: string | null;
+  area: string | null;
 
   @Column({ name: 'UNIDAD MEDIDA', nullable: true })
   'UNIDAD MEDIDA': string | null;
 
   @Column({ nullable: true })
-  VARIABLE: string | null;
+  variable: string | null;
 
   @Column({ nullable: true })
-  URL: string | null;
+  url: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ name: 'TIPO INGRESO', nullable: true })
   'TIPO INGRESO': string | null;
 
   @Column({ nullable: true })
-  ID: string | null;
+  id: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 }

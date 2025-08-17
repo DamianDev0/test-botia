@@ -3,7 +3,7 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONTENIDOS_REC')
 export class ContenidosRec extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   descripcion: string | null;
@@ -27,10 +27,10 @@ export class ContenidosRec extends BaseEntity {
   descargar: boolean;
 
   @Column({ nullable: true })
-  id_rol: string | null;
+  idRol: string | null;
 
   @Column({ nullable: true })
-  url_recurso: string | null;
+  urlRecurso: string | null;
 
   @Column({ nullable: true })
   origen: string | null;
@@ -57,5 +57,5 @@ export class ContenidosRec extends BaseEntity {
   requerido: boolean;
 
   @Column({ nullable: true })
-  id_usuario: string | null;
+  idUsuario: string | null;
 }

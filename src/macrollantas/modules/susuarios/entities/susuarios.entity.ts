@@ -3,16 +3,16 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('susuarios')
 export class Susuarios extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   rol: string | null;
 
   @Column({ nullable: true })
-  EMAIL: string | null;
+  email: string | null;
 
   @Column({ nullable: true })
-  VENDEDOR: string | null;
+  vendedor: string | null;
 
   @Column({ nullable: true })
   usuario: string | null;
@@ -30,17 +30,17 @@ export class Susuarios extends BaseEntity {
   vencimiento: Date | null;
 
   @Column({ nullable: true })
-  clave_acce: string | null;
+  claveAcce: string | null;
 
   @Column({ nullable: true })
   group: string | null;
 
   @Column({ nullable: true })
-  ruta_foto: string | null;
+  rutaFoto: string | null;
 
   @Column({ nullable: true })
   activo: number | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 }

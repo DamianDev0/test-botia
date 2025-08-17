@@ -3,29 +3,29 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('SYS_ROL_CAMPO')
 export class SysRolCampo extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  NICHO: string | null;
+  nicho: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  TABLA: string | null;
+  tabla: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  ROL: string | null;
+  rol: string | null;
 
   @Column({ nullable: true })
-  PERMISO: string | null;
+  permiso: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  CAMPO: string | null;
+  campo: string | null;
 }

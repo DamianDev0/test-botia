@@ -3,82 +3,82 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONTENIDOS')
 export class Contenidos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  num_visitas: number | null;
+  numVisitas: number | null;
 
   @Column({ nullable: true })
-  num_calificaciones: number | null;
+  numCalificaciones: number | null;
 
   @Column({ nullable: true })
-  val_costo_anterior: number | null;
+  valCostoAnterior: number | null;
 
   @Column({ nullable: true })
-  num_ventas: number | null;
+  numVentas: number | null;
 
   @Column({ nullable: true })
-  num_capitulos: number | null;
+  numCapitulos: number | null;
 
   @Column({ nullable: true })
-  val_costo: number | null;
+  valCosto: number | null;
 
   @Column({ nullable: true })
-  num_nivel: number | null;
+  numNivel: number | null;
 
   @Column({ nullable: true })
-  id_usuario: string | null;
+  idUsuario: string | null;
 
   @Column({ nullable: true })
-  url_audio: string | null;
+  urlAudio: string | null;
 
   @Column({ nullable: true })
-  nom_idioma: string | null;
+  nomIdioma: string | null;
 
   @Column({ nullable: true })
-  url_foto: string | null;
+  urlFoto: string | null;
 
   @Column({ nullable: true })
-  fec_creacion: Date | null;
+  fecCreacion: Date | null;
 
   @Column({ nullable: true })
-  num_cal_promedio: number | null;
+  numCalPromedio: number | null;
 
   @Column({ nullable: true })
-  num_duracion: number | null;
+  numDuracion: number | null;
 
   @Column({ nullable: true })
-  nom_traduccion: string | null;
+  nomTraduccion: string | null;
 
   @Column({ nullable: true })
-  num_estudiantes: number | null;
+  numEstudiantes: number | null;
 
   @Column({ nullable: true })
-  fec_actualizacion: Date | null;
+  fecActualizacion: Date | null;
 
   @Column({ nullable: true })
-  url_video: string | null;
+  urlVideo: string | null;
 
   @Column({ nullable: true })
-  nom_subtitulo: string | null;
+  nomSubtitulo: string | null;
 
   @Column({ nullable: true })
-  nom_titulo: string | null;
+  nomTitulo: string | null;
 
   @Column({ nullable: true })
-  id_categoria: string | null;
+  idCategoria: string | null;
 
   @Column({ nullable: true })
-  id_subcategoria: string | null;
+  idSubcategoria: string | null;
 
   @Column({ nullable: true })
-  fec_publicacion: Date | null;
+  fecPublicacion: Date | null;
 
   @Column({ nullable: true })
-  url_texto: string | null;
+  urlTexto: string | null;
 
   @Column({ nullable: true })
-  ind_estado: string | null;
+  indEstado: string | null;
 
   @Column({ nullable: true })
   id: string | null;

@@ -3,26 +3,26 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG CAPTURA')
 export class ConfigCaptura extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  DOCUMENTO: string | null;
+  documento: string | null;
 
   @Column({ nullable: true })
-  KEY: string | null;
+  key: string | null;
 
   @Column({ nullable: true })
-  COMPONENTE: string | null;
+  componente: string | null;
 
   @Column({ nullable: true })
-  ID: string | null;
+  id: string | null;
 
   @Column({ name: 'MANEJA KEY', default: true })
-  MANEJA_KEY: boolean;
+  manejaKey: boolean;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 }

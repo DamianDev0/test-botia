@@ -5,7 +5,7 @@ export class CreateTraFisicoDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PERIODO: string;
+  periodo: string;
 
   @IsOptional()
   @IsString()
@@ -15,22 +15,22 @@ export class CreateTraFisicoDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CANTIDAD: number;
+  cantidad: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  BODEGA: string;
+  bodega: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ICONO: string;
+  icono: string;
 
   @IsOptional()
   @IsNumber()
@@ -40,7 +40,7 @@ export class CreateTraFisicoDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsNumber()
@@ -50,17 +50,17 @@ export class CreateTraFisicoDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  COSTO: number;
+  costo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  UBICACION: string;
+  ubicacion: string;
 
   @IsOptional()
   @IsString()
@@ -70,27 +70,27 @@ export class CreateTraFisicoDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PRECIO: number;
+  precio: number;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PLU: string;
+  plu: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DESCRIPCION: string;
+  descripcion: string;
 
   @IsOptional()
   @IsString()
@@ -100,10 +100,10 @@ export class CreateTraFisicoDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  USUARIO: string;
+  usuario: string;
 }

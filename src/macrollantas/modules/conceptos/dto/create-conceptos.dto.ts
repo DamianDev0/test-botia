@@ -5,40 +5,40 @@ export class CreateConceptosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONCEPTOC: string;
+  conceptoc: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DOCUMENTO: string;
+  documento: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONCEPTO: string;
+  concepto: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  OPERACION: number;
+  operacion: number;
 }

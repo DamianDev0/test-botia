@@ -5,50 +5,50 @@ export class CreateDepEquiposDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_EMPRESA: string;
+  idEmpresa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  NUMERO: number;
+  numero: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TECNICO: string;
+  tecnico: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_SUCURSAL: string;
+  idSucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DELEGADO: string;
+  delegado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  LOGO: string;
+  logo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_NICHO: string;
+  idNicho: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE: string;
+  nombre: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_EQUIPO: string;
+  idEquipo: string;
 }

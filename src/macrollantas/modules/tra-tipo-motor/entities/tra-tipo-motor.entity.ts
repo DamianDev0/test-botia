@@ -3,20 +3,20 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_tipo_motor')
 export class TraTipoMotor extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  MOTOR: string | null;
+  motor: string | null;
 
   @Column({ nullable: true })
-  MARCA: string | null;
+  marca: string | null;
 
   @Column({ nullable: true })
-  EMPRFESA: string | null;
+  emprfesa: string | null;
 
   @Column({ nullable: true })
-  REFERENCIA: string | null;
+  referencia: string | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 }

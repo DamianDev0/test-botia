@@ -3,92 +3,92 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG DETALLE')
 export class ConfigDetalle extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ name: 'TIPO DATO', nullable: true })
   tipoDato: string | null;
 
   @Column({ nullable: true })
-  FORMATO: string | null;
+  formato: string | null;
 
   @Column({ nullable: true })
-  LOCATION: string | null;
+  location: string | null;
 
   @Column({ name: 'VALOR INICIAL', nullable: true })
   valorInicial: string | null;
 
   @Column({ nullable: true })
-  FILA: number | null;
+  fila: number | null;
 
   @Column({ nullable: true })
-  COLUMNA: number | null;
+  columna: number | null;
 
   @Column({ name: 'COLOR LETRA', nullable: true })
   colorLetra: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  CAMPO: string | null;
+  campo: string | null;
 
   @Column({ nullable: true })
-  RADIUS: number | null;
+  radius: number | null;
 
   @Column({ name: 'TIPO LABEL', default: true })
   tipoLabel: boolean;
 
   @Column({ default: true })
-  INDICE: boolean;
+  indice: boolean;
 
   @Column({ nullable: true })
-  SIZE: number | null;
+  size: number | null;
 
   @Column({ nullable: true })
-  DOCUMENTO: string | null;
+  documento: string | null;
 
   @Column({ nullable: true })
-  TABLA: string | null;
+  tabla: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ nullable: true })
-  COLOR: string | null;
+  color: string | null;
 
   @Column({ default: true })
-  CONTAINER: boolean;
+  container: boolean;
 
   @Column({ nullable: true })
-  FONT: string | null;
+  font: string | null;
 
   @Column({ default: true })
-  REQUERIDO: boolean;
+  requerido: boolean;
 
   @Column({ nullable: true })
-  FORMULA: string | null;
+  formula: string | null;
 
   @Column({ nullable: true })
-  QUERY: string | null;
+  query: string | null;
 
   @Column({ nullable: true })
-  ACCION: string | null;
+  accion: string | null;
 
   @Column({ nullable: true })
-  COMPONENTE: string | null;
+  componente: string | null;
 
   @Column({ nullable: true })
-  HEIGHT: number | null;
+  height: number | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  RUTA: string | null;
+  ruta: string | null;
 
   @Column({ default: true })
-  VISIBLE: boolean;
+  visible: boolean;
 
   @Column({ default: true })
-  EDITABLE: boolean;
+  editable: boolean;
 }

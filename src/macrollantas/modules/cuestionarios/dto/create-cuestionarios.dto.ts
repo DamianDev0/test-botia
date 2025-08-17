@@ -16,7 +16,7 @@ export class CreateCuestionariosDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_respuesta: Date;
+  fechaRespuesta: Date;
 
   @IsOptional()
   @IsNumber()
@@ -66,12 +66,12 @@ export class CreateCuestionariosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_foto: string;
+  urlFoto: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_pregunta: Date;
+  fechaPregunta: Date;
 
   @IsOptional()
   @IsString()
@@ -81,7 +81,7 @@ export class CreateCuestionariosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  tipo_calificacion: string;
+  tipoCalificacion: string;
 
   @IsOptional()
   @IsString()
@@ -101,7 +101,7 @@ export class CreateCuestionariosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_video: string;
+  urlVideo: string;
 
   @IsOptional()
   @IsString()

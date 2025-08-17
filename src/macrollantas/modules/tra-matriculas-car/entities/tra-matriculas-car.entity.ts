@@ -3,35 +3,35 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_matriculas_car')
 export class TraMatriculasCar extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  REFERENCIA: string | null;
+  referencia: string | null;
 
   @Column({ nullable: true })
-  ID_MATRICULA: string | null;
+  idMatricula: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ default: true })
-  ESTADO: boolean;
+  estado: boolean;
 
   @Column({ nullable: true })
-  ATRIBUTO: string | null;
+  atributo: string | null;
 
   @Column({ nullable: true })
-  CODIGO: string | null;
+  codigo: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ nullable: true })
-  VALOR: string | null;
+  valor: string | null;
 }

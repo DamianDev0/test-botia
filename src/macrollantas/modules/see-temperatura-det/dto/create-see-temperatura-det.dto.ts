@@ -5,45 +5,45 @@ export class CreateSeeTemperaturaDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  HORA: string;
+  hora: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  NUMERO: number;
+  numero: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_TEMPERATURA: string;
+  idTemperatura: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TEMPERATURA: number;
+  temperatura: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  RESPONSABLE: string;
+  responsable: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 }

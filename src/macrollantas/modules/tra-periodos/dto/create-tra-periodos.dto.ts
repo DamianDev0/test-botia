@@ -10,7 +10,7 @@ export class CreateTraPeriodosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsDateString()
@@ -25,20 +25,20 @@ export class CreateTraPeriodosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MES: number;
+  mes: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PERIODO: string;
+  periodo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 }

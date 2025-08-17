@@ -10,7 +10,7 @@ export class CreateTemporadasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsDateString()
@@ -20,10 +20,10 @@ export class CreateTemporadasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TEMPORADA: string;
+  temporada: string;
 }

@@ -3,10 +3,10 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('VENCIMIENTOS')
 export class Vencimientos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 
   @Column({ name: 'FECHA FINAL', nullable: true })
   'FECHA FINAL': Date | null;
@@ -15,37 +15,37 @@ export class Vencimientos extends BaseEntity {
   'DIA FINAL': string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ name: 'DIA INICIAL', nullable: true })
   'DIA INICIAL': string | null;
 
   @Column({ nullable: true })
-  NICHO: string | null;
+  nicho: string | null;
 
   @Column({ nullable: true })
-  PLACA: string | null;
+  placa: string | null;
 
   @Column({ name: 'KMS INICIAL', nullable: true })
   'KMS INICIAL': number | null;
 
   @Column({ nullable: true })
-  SERVICIO: string | null;
+  servicio: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ default: true })
-  ESTADO: boolean;
+  estado: boolean;
 
   @Column({ name: 'FECHA INICIAL', nullable: true })
   'FECHA INICIAL': Date | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  USABILIDAD: string | null;
+  usabilidad: string | null;
 
   @Column({ name: 'ID CLIENTE', nullable: true })
   'ID CLIENTE': string | null;

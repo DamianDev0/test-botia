@@ -3,35 +3,35 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('TABLAS')
 export class Tablas extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  ID: string | null;
+  id: string | null;
 
   @Column({ nullable: true })
-  ID_EMPRESA: string | null;
+  idEmpresa: string | null;
 
   @Column({ nullable: true })
-  CAMPO: string | null;
+  campo: string | null;
 
   @Column({ nullable: true })
-  ESQUEMA: string | null;
+  esquema: string | null;
 
   @Column({ nullable: true })
-  TABLA: string | null;
+  tabla: string | null;
 
   @Column({ nullable: true })
-  ID_NICHO: string | null;
+  idNicho: string | null;
 
   @Column({ nullable: true })
-  BADE_DATOS: string | null;
+  badeDatos: string | null;
 
   @Column({ nullable: true })
-  ID_SUCURSAL: string | null;
+  idSucursal: string | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 }

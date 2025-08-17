@@ -5,7 +5,7 @@ export class CreateCuestionariosPDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_empresa: string;
+  idEmpresa: string;
 
   @IsOptional()
   @IsString()
@@ -20,7 +20,7 @@ export class CreateCuestionariosPDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  me_gusta: string;
+  meGusta: string;
 
   @IsOptional()
   @IsString()
@@ -30,12 +30,12 @@ export class CreateCuestionariosPDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_categoria: string;
+  idCategoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  tipo_calificacion: string;
+  tipoCalificacion: string;
 
   @IsOptional()
   @IsString()
@@ -50,7 +50,7 @@ export class CreateCuestionariosPDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_foto: string;
+  urlFoto: string;
 
   @IsOptional()
   @IsString()
@@ -65,7 +65,7 @@ export class CreateCuestionariosPDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_subcategoria: string;
+  idSubcategoria: string;
 
   @IsOptional()
   @IsNumber()
@@ -85,10 +85,10 @@ export class CreateCuestionariosPDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_pregunta: Date;
+  fechaPregunta: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_sucursal: string;
+  idSucursal: string;
 }

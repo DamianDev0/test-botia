@@ -10,17 +10,17 @@ export class CreateKardexDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  STOCK: number;
+  stock: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIAS: string;
+  referencias: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsString()
@@ -30,47 +30,47 @@ export class CreateKardexDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MODELOS: string;
+  modelos: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ENTRADA: number;
+  entrada: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  SALIDA: number;
+  salida: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CODIGO: string;
+  codigo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FOTO: string;
+  foto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SKU: string;
+  sku: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DESCRIPCION: string;
+  descripcion: string;
 
   @IsOptional()
   @IsString()
@@ -85,12 +85,12 @@ export class CreateKardexDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBCATEGORIA: string;
+  subcategoria: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsString()
@@ -100,12 +100,12 @@ export class CreateKardexDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MARCA: string;
+  marca: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  IVA: number;
+  iva: number;
 
   @IsOptional()
   @IsNumber()
@@ -115,10 +115,10 @@ export class CreateKardexDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NICHO: string;
+  nicho: string;
 }

@@ -5,17 +5,17 @@ export class CreateSeeVariablesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DESCRIPCION: string;
+  descripcion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  AREA: string;
+  area: string;
 
   @IsOptional()
   @IsString()
@@ -25,22 +25,22 @@ export class CreateSeeVariablesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VARIABLE: string;
+  variable: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  URL: string;
+  url: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
@@ -50,10 +50,10 @@ export class CreateSeeVariablesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 }

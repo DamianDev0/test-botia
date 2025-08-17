@@ -5,35 +5,35 @@ export class CreateConfigCapturaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DOCUMENTO: string;
+  documento: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  KEY: string;
+  key: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COMPONENTE: string;
+  componente: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  MANEJA_KEY: boolean;
+  manejaKey: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 }

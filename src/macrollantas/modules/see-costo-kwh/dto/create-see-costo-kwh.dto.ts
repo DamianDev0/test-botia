@@ -5,30 +5,30 @@ export class CreateSeeCostoKwhDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PERIODO: string;
+  periodo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  COSTO: number;
+  costo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 }

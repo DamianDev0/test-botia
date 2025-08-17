@@ -5,7 +5,7 @@ export class CreateContenidosUsrDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 
   @IsOptional()
   @IsString()
@@ -15,25 +15,25 @@ export class CreateContenidosUsrDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_fecha: Date;
+  fecFecha: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_contenido: string;
+  idContenido: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_usuario: string;
+  idUsuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_sucursal: string;
+  codSucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_empresa: string;
+  codEmpresa: string;
 }

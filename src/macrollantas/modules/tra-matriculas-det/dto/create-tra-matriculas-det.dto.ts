@@ -5,17 +5,17 @@ export class CreateTraMatriculasDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_MATRICULA: string;
+  idMatricula: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SKU: string;
+  sku: string;
 
   @IsOptional()
   @IsString()
@@ -25,17 +25,17 @@ export class CreateTraMatriculasDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CODIGO: string;
+  codigo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CANTIDAD: number;
+  cantidad: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
@@ -45,20 +45,20 @@ export class CreateTraMatriculasDetDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  UBICACION: string;
+  ubicacion: string;
 }

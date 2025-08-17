@@ -3,10 +3,10 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG VISTA')
 export class ConfigVista extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ANCHO: number | null;
+  ancho: number | null;
 
   @Column({ name: 'NUMERO FILAS', nullable: true })
   'NUMERO FILAS': number | null;
@@ -15,49 +15,49 @@ export class ConfigVista extends BaseEntity {
   'NUMERO COLUMNAS': number | null;
 
   @Column({ nullable: true })
-  CONTAINER: string | null;
+  container: string | null;
 
   @Column({ nullable: true })
-  RADIUS: number | null;
+  radius: number | null;
 
   @Column({ nullable: true })
-  COMPONENTE: string | null;
+  componente: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 
   @Column({ default: true })
-  VISIBLE: boolean;
+  visible: boolean;
 
   @Column({ name: 'BORDER SIZE', nullable: true })
   'BORDER SIZE': number | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  ALTO: number | null;
+  alto: number | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ name: 'BORDER COLOR', nullable: true })
   'BORDER COLOR': string | null;
 
   @Column({ default: true })
-  BORDER: boolean;
+  border: boolean;
 
   @Column({ nullable: true })
-  DOCUMENTO: string | null;
+  documento: string | null;
 
   @Column({ nullable: true })
-  ORIENTACION: string | null;
+  orientacion: string | null;
 
   @Column({ nullable: true })
-  COLOR: string | null;
+  color: string | null;
 
   @Column({ name: 'TIPO APP', nullable: true })
   'TIPO APP': string | null;

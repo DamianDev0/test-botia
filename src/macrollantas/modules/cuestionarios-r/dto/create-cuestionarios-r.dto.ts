@@ -11,17 +11,17 @@ export class CreateCuestionariosRDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_sucursal: string;
+  idSucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_empresa: string;
+  idEmpresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_pregunta: string;
+  idPregunta: string;
 
   @IsOptional()
   @IsBoolean()
@@ -36,12 +36,12 @@ export class CreateCuestionariosRDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_usuario: string;
+  idUsuario: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  me_gusta: boolean;
+  meGusta: boolean;
 
   @IsOptional()
   @IsNumber()
@@ -51,7 +51,7 @@ export class CreateCuestionariosRDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_respuesta: Date;
+  fechaRespuesta: Date;
 
   @IsOptional()
   @IsString()
@@ -76,7 +76,7 @@ export class CreateCuestionariosRDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_foto: string;
+  urlFoto: string;
 
   @IsOptional()
   @IsString()

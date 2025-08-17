@@ -5,12 +5,12 @@ export class CreateTraPosicionesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  POSICION: string;
+  posicion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()

@@ -105,7 +105,7 @@ export class CreateConfigDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NICHO: string;
+  nicho: string;
 
   @IsOptional()
   @IsString()

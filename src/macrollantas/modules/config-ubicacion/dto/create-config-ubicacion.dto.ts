@@ -5,30 +5,30 @@ export class CreateConfigUbicacionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CAMPO: string;
+  campo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  LONGITUD: number;
+  longitud: number;
 }

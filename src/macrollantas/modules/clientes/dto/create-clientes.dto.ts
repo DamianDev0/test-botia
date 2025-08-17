@@ -5,27 +5,27 @@ export class CreateClientesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NICHO: string;
+  nicho: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMAIL: string;
+  email: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TELEFONO: string;
+  telefono: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FECHA: string;
+  fecha: string;
 
   @IsOptional()
   @IsString()
@@ -35,12 +35,12 @@ export class CreateClientesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PLACA: string;
+  placa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsNumber()
@@ -50,30 +50,30 @@ export class CreateClientesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE: string;
+  nombre: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SEXO: string;
+  sexo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  NIT: number;
+  nit: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  QR: string;
+  qr: string;
 }

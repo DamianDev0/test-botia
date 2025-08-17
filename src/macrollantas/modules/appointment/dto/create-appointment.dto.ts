@@ -5,7 +5,7 @@ export class CreateAppointmentDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  fecha_string: string;
+  fechaString: string;
 
   @IsOptional()
   @IsString()
@@ -30,7 +30,7 @@ export class CreateAppointmentDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_movimiento: string;
+  idMovimiento: string;
 
   @IsOptional()
   @IsString()

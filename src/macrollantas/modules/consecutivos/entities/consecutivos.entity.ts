@@ -3,20 +3,20 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('consecutivos')
 export class Consecutivos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ name: 'S-NOMBRE', nullable: true })
   'S-NOMBRE': string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  NUMERO: number | null;
+  numero: number | null;
 
   @Column({ nullable: true })
-  DOCUMENTO: string | null;
+  documento: string | null;
 }

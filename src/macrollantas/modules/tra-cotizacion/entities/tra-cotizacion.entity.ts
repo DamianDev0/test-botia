@@ -3,7 +3,7 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_cotizacion')
 export class TraCotizacion extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ name: 'FORMA PAGO', nullable: true })
   'FORMA PAGO': string | null;
@@ -12,13 +12,13 @@ export class TraCotizacion extends BaseEntity {
   'TIPO ROMBO': string | null;
 
   @Column({ nullable: true })
-  FECHA: Date | null;
+  fecha: Date | null;
 
   @Column({ nullable: true })
-  TIEMPO: number | null;
+  tiempo: number | null;
 
   @Column({ nullable: true })
-  ASESOR: string | null;
+  asesor: string | null;
 
   @Column({ name: 'TIPO VISTA', nullable: true })
   'TIPO VISTA': string | null;
@@ -30,86 +30,86 @@ export class TraCotizacion extends BaseEntity {
   'NOTAS CLIENTE': string | null;
 
   @Column({ nullable: true })
-  PLACA: string | null;
+  placa: string | null;
 
   @Column({ nullable: true })
-  REFERENCIA2: string | null;
+  referencia2: string | null;
 
   @Column({ name: 'FECHA CREACION', nullable: true })
   'FECHA CREACION': Date | null;
 
   @Column({ nullable: true })
-  USUARIO: string | null;
+  usuario: string | null;
 
   @Column({ nullable: true })
-  NIT: string | null;
+  nit: string | null;
 
   @Column({ nullable: true })
-  MOVIMIENTO: string | null;
+  movimiento: string | null;
 
   @Column({ nullable: true })
-  ROMBO: string | null;
+  rombo: string | null;
 
   @Column({ nullable: true })
-  NOMBRE: string | null;
+  nombre: string | null;
 
   @Column({ nullable: true })
-  BODEGA: string | null;
+  bodega: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ name: 'TIPO MOTOR', nullable: true })
   'TIPO MOTOR': string | null;
 
   @Column({ nullable: true })
-  EMAIL: string | null;
+  email: string | null;
 
   @Column({ nullable: true })
-  SUBCATEGORIA: string | null;
+  subcategoria: string | null;
 
   @Column({ nullable: true })
-  NOTAS: string | null;
+  notas: string | null;
 
   @Column({ name: 'FECHA VENCE', nullable: true })
   'FECHA VENCE': Date | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  REFERENCIA: string | null;
+  referencia: string | null;
 
   @Column({ nullable: true })
-  KILOMETRAJE: number | null;
+  kilometraje: number | null;
 
   @Column({ nullable: true })
-  TELEFONO: string | null;
+  telefono: string | null;
 
   @Column({ nullable: true })
-  NUMERO: string | null;
+  numero: string | null;
 
   @Column({ nullable: true })
-  CONCEPTO: string | null;
+  concepto: string | null;
 
   @Column({ name: 'TIPO VEHICULO', nullable: true })
   'TIPO VEHICULO': string | null;
 
   @Column({ nullable: true })
-  CATEGORIA: string | null;
+  categoria: string | null;
 
   @Column({ nullable: true })
-  MARCA: string | null;
+  marca: string | null;
 
   @Column({ nullable: true })
-  PLAZO: number | null;
+  plazo: number | null;
 
   @Column({ name: 'BODEGA DESTINO', nullable: true })
   'BODEGA DESTINO': string | null;
 
   @Column({ nullable: true })
-  MODELO: number | null;
+  modelo: number | null;
 }

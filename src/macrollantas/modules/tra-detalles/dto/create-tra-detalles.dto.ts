@@ -5,122 +5,122 @@ export class CreateTraDetallesDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_proceso: Date;
+  fecProceso: Date;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_total: number;
+  numTotal: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_sucursal: string;
+  codSucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  tip_rombo: string;
+  tipRombo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_subgrupo: string;
+  codSubgrupo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  num_nit: string;
+  numNit: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_codigo: string;
+  nomCodigo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  fecha_final: string;
+  fechaFinal: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_tiempo_proceso: number;
+  numTiempoProceso: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  can_pedida: number;
+  canPedida: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_tiempo_total: number;
+  numTiempoTotal: number;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_inicial: Date;
+  fechaInicial: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_placa: string;
+  codPlaca: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_grupo: string;
+  codGrupo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_email: string;
+  codEmail: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_evento: string;
+  codEvento: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_tecnico: string;
+  codTecnico: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_item: number;
+  numItem: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_ubicacion_bodega: string;
+  codUbicacionBodega: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_cliente: string;
+  nomCliente: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  num_rombo: string;
+  numRombo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_proceso: string;
+  codProceso: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_ubicacion: string;
+  codUbicacion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 
   @IsOptional()
   @IsString()
@@ -130,20 +130,20 @@ export class CreateTraDetallesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_codigo: string;
+  codCodigo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  can_despachada: number;
+  canDespachada: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_empresa: string;
+  codEmpresa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  can_existencia: number;
+  canExistencia: number;
 }

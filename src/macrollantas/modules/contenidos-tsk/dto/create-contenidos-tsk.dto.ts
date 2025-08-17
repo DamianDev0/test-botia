@@ -11,77 +11,77 @@ export class CreateContenidosTskDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_inicial: Date;
+  fecInicial: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_empresa: string;
+  idEmpresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_sucursal: string;
+  idSucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_categoria: string;
+  idCategoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_contenido: string;
+  idContenido: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_nombre: string;
+  nomNombre: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_alcance: string;
+  nomAlcance: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_tiempo: number;
+  numTiempo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_calendario: string;
+  idCalendario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_ubicacion: string;
+  codUbicacion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_frecuencia: string;
+  nomFrecuencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_tipo: string;
+  codTipo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_subcategoria: string;
+  idSubcategoria: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_numero: number;
+  numNumero: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_pasos: string;
+  nomPasos: string;
 
   @IsOptional()
   @IsString()
@@ -91,45 +91,45 @@ export class CreateContenidosTskDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_ubicacion: string;
+  idUbicacion: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ind_recordacion: boolean;
+  indRecordacion: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_prioridad: string;
+  indPrioridad: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_usuario: string;
+  idUsuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_concepto: string;
+  idConcepto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_notas: string;
+  nomNotas: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_dias: string;
+  nomDias: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_final: Date;
+  fecFinal: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 }

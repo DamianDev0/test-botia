@@ -5,127 +5,127 @@ export class CreateContenidosDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_visitas: number;
+  numVisitas: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_calificaciones: number;
+  numCalificaciones: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  val_costo_anterior: number;
+  valCostoAnterior: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_ventas: number;
+  numVentas: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_capitulos: number;
+  numCapitulos: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  val_costo: number;
+  valCosto: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_nivel: number;
+  numNivel: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_usuario: string;
+  idUsuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_audio: string;
+  urlAudio: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_idioma: string;
+  nomIdioma: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_foto: string;
+  urlFoto: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_creacion: Date;
+  fecCreacion: Date;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_cal_promedio: number;
+  numCalPromedio: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_duracion: number;
+  numDuracion: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_traduccion: string;
+  nomTraduccion: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_estudiantes: number;
+  numEstudiantes: number;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_actualizacion: Date;
+  fecActualizacion: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_video: string;
+  urlVideo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_subtitulo: string;
+  nomSubtitulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_titulo: string;
+  nomTitulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_categoria: string;
+  idCategoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_subcategoria: string;
+  idSubcategoria: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_publicacion: Date;
+  fecPublicacion: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_texto: string;
+  urlTexto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 
   @IsOptional()
   @IsString()

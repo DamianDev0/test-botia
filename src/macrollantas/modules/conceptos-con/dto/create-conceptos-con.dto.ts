@@ -5,12 +5,12 @@ export class CreateConceptosConDto {
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  TOPE2?: number;
+  tope2?: number;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  PORCENTAJE?: number;
+  porcentaje?: number;
 
   @IsOptional()
   @IsString()
@@ -20,22 +20,22 @@ export class CreateConceptosConDto {
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  CUENTA?: string;
+  cuenta?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  SUCURSAL?: string;
+  sucursal?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  ESTADO?: string;
+  estado?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  EMPRESA?: string;
+  empresa?: string;
 
   @IsOptional()
   @IsString()
@@ -45,7 +45,7 @@ export class CreateConceptosConDto {
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  TIPOV?: string;
+  tipov?: string;
 
   @IsOptional()
   @IsString()
@@ -55,10 +55,10 @@ export class CreateConceptosConDto {
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  ORDEN?: number;
+  orden?: number;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  TOPE1?: number;
+  tope1?: number;
 }

@@ -5,50 +5,50 @@ export class CreateTablasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_EMPRESA: string;
+  idEmpresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CAMPO: string;
+  campo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESQUEMA: string;
+  esquema: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TABLA: string;
+  tabla: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_NICHO: string;
+  idNicho: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  BADE_DATOS: string;
+  badeDatos: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_SUCURSAL: string;
+  idSucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 }

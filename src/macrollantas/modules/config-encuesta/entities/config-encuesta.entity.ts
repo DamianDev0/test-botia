@@ -3,7 +3,7 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG_ENCUESTA')
 export class ConfigEncuesta extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   texto: string | null;
@@ -18,13 +18,13 @@ export class ConfigEncuesta extends BaseEntity {
   empresa: string | null;
 
   @Column({ nullable: true })
-  fecha_inicial: Date | null;
+  fechaInicial: Date | null;
 
   @Column({ nullable: true })
   sucursal: string | null;
 
   @Column({ nullable: true })
-  fecha_final: Date | null;
+  fechaFinal: Date | null;
 
   @Column({ nullable: true })
   imagen: string | null;

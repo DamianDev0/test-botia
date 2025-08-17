@@ -11,17 +11,17 @@ export class CreateTraMatriculasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CODIGO: string;
+  codigo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ENTRADA: string;
+  entrada: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
@@ -36,57 +36,57 @@ export class CreateTraMatriculasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBCATEGORIA: string;
+  subcategoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NUMERO: string;
+  numero: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NIT: string;
+  nit: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOTAS: string;
+  notas: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CANTIDAD: number;
+  cantidad: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONCEPTO: string;
+  concepto: string;
 
   @IsOptional()
   @IsString()
@@ -96,10 +96,10 @@ export class CreateTraMatriculasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REMISION: string;
+  remision: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FACTURA: string;
+  factura: string;
 }

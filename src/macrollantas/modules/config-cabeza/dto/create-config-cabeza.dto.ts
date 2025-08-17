@@ -5,35 +5,35 @@ export class CreateConfigCabezaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DOCUMENTO: string | null;
+  documento: string | null;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  KEY: string | null;
+  key: string | null;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COMPONENTE: string | null;
+  componente: string | null;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  APP: string | null;
+  app: string | null;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  MANEJA_KEY: boolean;
+  manejaKey: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string | null;
+  id: string | null;
 }

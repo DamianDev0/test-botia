@@ -10,7 +10,7 @@ export class CreateUsuarios1Dto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  COLUMNA: number;
+  columna: number;
 
   @IsOptional()
   @IsString()
@@ -20,42 +20,42 @@ export class CreateUsuarios1Dto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  AREA: string;
+  area: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  UBICACION: string;
+  ubicacion: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  NIVEL: number;
+  nivel: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  FILA: number;
+  fila: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  USUARIO: string;
+  usuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FECHA: string;
+  fecha: string;
 
   @IsOptional()
   @IsNumber()
@@ -65,15 +65,15 @@ export class CreateUsuarios1Dto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  BODEGA: string;
+  bodega: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 }

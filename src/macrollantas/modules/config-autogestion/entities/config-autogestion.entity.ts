@@ -3,32 +3,32 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG AUTOGESTION')
 export class ConfigAutogestion extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  NICHO: string | null;
+  nicho: string | null;
 
   @Column({ nullable: true })
-  SUBTITULO: string | null;
+  subtitulo: string | null;
 
   @Column({ nullable: true })
-  TITULO: string | null;
+  titulo: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ default: true })
-  VISIBLE: boolean;
+  visible: boolean;
 
   @Column({ nullable: true })
-  IMAGEN: string | null;
+  imagen: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ nullable: true })
-  ALINEACION: string | null;
+  alineacion: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 }

@@ -3,7 +3,7 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('rombo')
 export class Rombo extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   fecha: Date | null;
@@ -21,7 +21,7 @@ export class Rombo extends BaseEntity {
   rombo: string | null;
 
   @Column({ nullable: true })
-  id_movimiento: string | null;
+  idMovimiento: string | null;
 
   @Column({ nullable: true })
   sucursal: string | null;

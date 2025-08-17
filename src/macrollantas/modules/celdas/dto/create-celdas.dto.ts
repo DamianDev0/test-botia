@@ -5,22 +5,22 @@ export class CreateCeldasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CELDA: string;
+  celda: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PLACA: string;
+  placa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsString()
@@ -30,5 +30,5 @@ export class CreateCeldasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 }

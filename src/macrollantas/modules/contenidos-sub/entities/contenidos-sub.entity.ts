@@ -3,26 +3,26 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONTENIDOS_SUB')
 export class ContenidosSub extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  num_subcapitulo: number | null;
+  numSubcapitulo: number | null;
 
   @Column({ nullable: true })
-  ind_estado: string | null;
+  indEstado: string | null;
 
   @Column({ nullable: true })
-  nom_titulo: string | null;
+  nomTitulo: string | null;
 
   @Column({ nullable: true })
-  id_contenido_cap: string | null;
+  idContenidoCap: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  num_clases: number | null;
+  numClases: number | null;
 
   @Column({ nullable: true })
-  num_duracion: number | null;
+  numDuracion: number | null;
 }

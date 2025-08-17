@@ -16,7 +16,7 @@ export class CreateConfigTargetaDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsNumber()
@@ -26,7 +26,7 @@ export class CreateConfigTargetaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  IMAGEN: string;
+  imagen: string;
 
   @IsOptional()
   @IsString()
@@ -41,12 +41,12 @@ export class CreateConfigTargetaDto {
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  COMPARTIR: boolean;
+  compartir: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TEXTO: string;
+  texto: string;
 
   @IsOptional()
   @IsString()
@@ -56,7 +56,7 @@ export class CreateConfigTargetaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CLIENTE: string;
+  cliente: string;
 
   @IsOptional()
   @IsNumber()
@@ -66,7 +66,7 @@ export class CreateConfigTargetaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsString()
@@ -76,17 +76,17 @@ export class CreateConfigTargetaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBTITULO: string;
+  subtitulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TITULO: string;
+  titulo: string;
 
   @IsOptional()
   @IsNumber()
@@ -101,7 +101,7 @@ export class CreateConfigTargetaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBCATEGORIA: string;
+  subcategoria: string;
 
   @IsOptional()
   @IsString()
@@ -111,12 +111,12 @@ export class CreateConfigTargetaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COMPONENTES: string;
+  componentes: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()

@@ -3,34 +3,34 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_plantillas_det')
 export class TraPlantillasDet extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  CANTIDAD: number | null;
+  cantidad: number | null;
 
   @Column({ nullable: true })
-  ID_TRA_PLANTILLA: string | null;
+  idTraPlantilla: string | null;
 
   @Column({ nullable: true })
-  TIEMPO: number | null;
+  tiempo: number | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ nullable: true })
-  NUMERO: number | null;
+  numero: number | null;
 
   @Column({ nullable: true })
-  IVA: number | null;
+  iva: number | null;
 
   @Column({ nullable: true })
-  NOTAS: string | null;
+  notas: string | null;
 
   @Column({ nullable: true })
-  COMPONENTE: string | null;
+  componente: string | null;
 
   @Column({ nullable: true })
-  CATEGORIA: string | null;
+  categoria: string | null;
 
   @Column({ name: 'VRU ORIGINAL', nullable: true })
   'VRU ORIGINAL': number | null;
@@ -39,7 +39,7 @@ export class TraPlantillasDet extends BaseEntity {
   'DESCRIPCION 2': string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ name: 'VRT HOMOLOGADO', nullable: true })
   'VRT HOMOLOGADO': number | null;
@@ -51,23 +51,23 @@ export class TraPlantillasDet extends BaseEntity {
   id: string | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 
   @Column({ nullable: true })
-  ORIGEN: string | null;
+  origen: string | null;
 
   @Column({ nullable: true })
-  APROBACION: string | null;
+  aprobacion: string | null;
 
   @Column({ nullable: true })
-  CODIGO: string | null;
+  codigo: string | null;
 
   @Column({ nullable: true })
-  DESCRIPCION: string | null;
+  descripcion: string | null;
 
   @Column({ name: 'VRU HOMOLOGADO', nullable: true })
   'VRU HOMOLOGADO': number | null;
 
   @Column({ nullable: true })
-  UNIDAD: string | null;
+  unidad: string | null;
 }

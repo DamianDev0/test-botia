@@ -3,29 +3,29 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('see_datos')
 export class SeeDatos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  fec_periodos: Date | null;
+  fecPeriodos: Date | null;
 
   @Column({ nullable: true })
-  fec_indicadores: Date | null;
+  fecIndicadores: Date | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  fec_variables: Date | null;
+  fecVariables: Date | null;
 
   @Column({ nullable: true })
-  DISPOSITIVO: number | null;
+  dispositivo: number | null;
 
   @Column({ nullable: true })
-  VARIABLE: number | null;
+  variable: number | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  fec_datos: Date | null;
+  fecDatos: Date | null;
 }

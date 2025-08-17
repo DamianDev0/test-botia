@@ -3,41 +3,41 @@ import { Entity, Column, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
 @Entity('conceptoscon')
 export class ConceptosCon extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ type: 'numeric', nullable: true })
-  TOPE2: number | null;
+  tope2: number | null;
 
   @Column({ type: 'numeric', nullable: true })
-  PORCENTAJE: number | null;
+  porcentaje: number | null;
 
   @Column({ name: 'CONCEPTO CON', nullable: true })
   'CONCEPTO CON': string | null;
 
   @Column({ nullable: true })
-  CUENTA: string | null;
+  cuenta: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ name: 'TIPO DOCUMENTO', nullable: true })
   'TIPO DOCUMENTO': string | null;
 
   @Column({ nullable: true })
-  TIPOV: string | null;
+  tipov: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ type: 'numeric', nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ type: 'numeric', nullable: true })
-  TOPE1: number | null;
+  tope1: number | null;
 }

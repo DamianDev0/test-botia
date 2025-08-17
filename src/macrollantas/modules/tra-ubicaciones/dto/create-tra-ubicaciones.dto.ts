@@ -5,12 +5,12 @@ export class CreateTraUbicacionesDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  BODEGA: string;
+  bodega: string;
 
   @IsOptional()
   @IsNumber()
@@ -20,22 +20,22 @@ export class CreateTraUbicacionesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  UBICACION: string;
+  ubicacion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  USUARIO: string;
+  usuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
@@ -50,30 +50,30 @@ export class CreateTraUbicacionesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  FILA: number;
+  fila: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  AREA: string;
+  area: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  COLUMNA: number;
+  columna: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NIVEL: string;
+  nivel: string;
 }

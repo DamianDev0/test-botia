@@ -3,92 +3,92 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_detalles')
 export class TraDetalles extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  fec_proceso: Date | null;
+  fecProceso: Date | null;
 
   @Column({ nullable: true })
-  num_total: number | null;
+  numTotal: number | null;
 
   @Column({ nullable: true })
-  cod_sucursal: string | null;
+  codSucursal: string | null;
 
   @Column({ nullable: true })
-  tip_rombo: string | null;
+  tipRombo: string | null;
 
   @Column({ nullable: true })
-  cod_subgrupo: string | null;
+  codSubgrupo: string | null;
 
   @Column({ nullable: true })
-  num_nit: string | null;
+  numNit: string | null;
 
   @Column({ nullable: true })
-  nom_codigo: string | null;
+  nomCodigo: string | null;
 
   @Column({ nullable: true })
-  fecha_final: string | null;
+  fechaFinal: string | null;
 
   @Column({ nullable: true })
-  num_tiempo_proceso: number | null;
+  numTiempoProceso: number | null;
 
   @Column({ nullable: true })
-  can_pedida: number | null;
+  canPedida: number | null;
 
   @Column({ nullable: true })
-  num_tiempo_total: number | null;
+  numTiempoTotal: number | null;
 
   @Column({ nullable: true })
-  fecha_inicial: Date | null;
+  fechaInicial: Date | null;
 
   @Column({ nullable: true })
-  cod_placa: string | null;
+  codPlaca: string | null;
 
   @Column({ nullable: true })
-  cod_grupo: string | null;
+  codGrupo: string | null;
 
   @Column({ nullable: true })
-  cod_email: string | null;
+  codEmail: string | null;
 
   @Column({ nullable: true })
-  cod_evento: string | null;
+  codEvento: string | null;
 
   @Column({ nullable: true })
-  cod_tecnico: string | null;
+  codTecnico: string | null;
 
   @Column({ nullable: true })
-  num_item: number | null;
+  numItem: number | null;
 
   @Column({ nullable: true })
-  cod_ubicacion_bodega: string | null;
+  codUbicacionBodega: string | null;
 
   @Column({ nullable: true })
-  nom_cliente: string | null;
+  nomCliente: string | null;
 
   @Column({ nullable: true })
-  num_rombo: string | null;
+  numRombo: string | null;
 
   @Column({ nullable: true })
-  cod_proceso: string | null;
+  codProceso: string | null;
 
   @Column({ nullable: true })
-  cod_ubicacion: string | null;
+  codUbicacion: string | null;
 
   @Column({ nullable: true })
-  ind_estado: string | null;
+  indEstado: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  cod_codigo: string | null;
+  codCodigo: string | null;
 
   @Column({ nullable: true })
-  can_despachada: number | null;
+  canDespachada: number | null;
 
   @Column({ nullable: true })
-  cod_empresa: string | null;
+  codEmpresa: string | null;
 
   @Column({ nullable: true })
-  can_existencia: number | null;
+  canExistencia: number | null;
 }

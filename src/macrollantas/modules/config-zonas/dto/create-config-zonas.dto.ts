@@ -5,45 +5,45 @@ export class CreateConfigZonasDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  COLUMNAS: number;
+  columnas: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PANEL: number;
+  panel: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  FILAS: number;
+  filas: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ZONA: string;
+  zona: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CANTIDAD: number;
+  cantidad: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ALINEACION: string;
+  alineacion: string;
 }

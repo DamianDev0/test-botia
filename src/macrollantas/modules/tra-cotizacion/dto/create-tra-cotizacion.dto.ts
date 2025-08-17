@@ -15,17 +15,17 @@ export class CreateTraCotizacionDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TIEMPO: number;
+  tiempo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ASESOR: string;
+  asesor: string;
 
   @IsOptional()
   @IsString()
@@ -45,12 +45,12 @@ export class CreateTraCotizacionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PLACA: string;
+  placa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA2: string;
+  referencia2: string;
 
   @IsOptional()
   @IsDateString()
@@ -60,37 +60,37 @@ export class CreateTraCotizacionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  USUARIO: string;
+  usuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NIT: string;
+  nit: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MOVIMIENTO: string;
+  movimiento: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ROMBO: string;
+  rombo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE: string;
+  nombre: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  BODEGA: string;
+  bodega: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
@@ -100,17 +100,17 @@ export class CreateTraCotizacionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMAIL: string;
+  email: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBCATEGORIA: string;
+  subcategoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOTAS: string;
+  notas: string;
 
   @IsOptional()
   @IsDateString()
@@ -120,7 +120,7 @@ export class CreateTraCotizacionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
@@ -130,27 +130,27 @@ export class CreateTraCotizacionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  KILOMETRAJE: number;
+  kilometraje: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TELEFONO: string;
+  telefono: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NUMERO: string;
+  numero: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONCEPTO: string;
+  concepto: string;
 
   @IsOptional()
   @IsString()
@@ -160,17 +160,17 @@ export class CreateTraCotizacionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MARCA: string;
+  marca: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PLAZO: number;
+  plazo: number;
 
   @IsOptional()
   @IsString()
@@ -180,5 +180,5 @@ export class CreateTraCotizacionDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MODELO: number;
+  modelo: number;
 }

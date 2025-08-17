@@ -5,62 +5,62 @@ export class CreateOreparacion12000Dto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHACREACION: Date;
+  fechacreacion: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CLAVEUSUARIO: string;
+  claveusuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  OBSERVACIONES: string;
+  observaciones: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NIT: string;
+  nit: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  IVA: number;
+  iva: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ROMBO: string;
+  rombo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MES: string;
+  mes: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  IMPRESO: number;
+  impreso: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VENDEDOR: string;
+  vendedor: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ANULADO: number;
+  anulado: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  BODEGA: string;
+  bodega: string;
 
   @IsOptional()
   @IsString()
@@ -70,50 +70,50 @@ export class CreateOreparacion12000Dto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PATIO: number;
+  patio: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CERRADA: number;
+  cerrada: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VALORAPROBADO: number;
+  valoraprobado: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  LIQUIDAR: number;
+  liquidar: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MERCADEO: number;
+  mercadeo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TEMP: string;
+  temp: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ESPERA: number;
+  espera: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  KILOMETRAJE: number;
+  kilometraje: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PLACA: string;
+  placa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VALOR: number;
+  valor: number;
 }

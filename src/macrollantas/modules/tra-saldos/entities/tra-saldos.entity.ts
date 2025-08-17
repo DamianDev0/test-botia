@@ -3,62 +3,62 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_saldos')
 export class TraSaldos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  VAL_COSTO: number | null;
+  valCosto: number | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 
   @Column({ nullable: true })
-  CAN_SALDO: number | null;
+  canSaldo: number | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  CAN_ENTRADAS: number | null;
+  canEntradas: number | null;
 
   @Column({ nullable: true })
-  REFERENCIA: string | null;
+  referencia: string | null;
 
   @Column({ nullable: true })
-  SKU: string | null;
+  sku: string | null;
 
   @Column({ nullable: true })
-  VAL_PRECIO: number | null;
+  valPrecio: number | null;
 
   @Column({ nullable: true })
-  PERIODO: string | null;
+  periodo: string | null;
 
   @Column({ nullable: true })
-  CAN_SALIDAS: number | null;
+  canSalidas: number | null;
 
   @Column({ nullable: true })
-  FECHA: string | null;
+  fecha: string | null;
 
   @Column({ nullable: true })
-  VAL_SALIDAS: number | null;
+  valSalidas: number | null;
 
   @Column({ default: true })
-  ESTADO: boolean;
+  estado: boolean;
 
   @Column({ nullable: true })
-  VAL_INICIAL: number | null;
+  valInicial: number | null;
 
   @Column({ nullable: true })
-  VAL_ENTRADAS: number | null;
+  valEntradas: number | null;
 
   @Column({ nullable: true })
-  CAN_INICIAL: number | null;
+  canInicial: number | null;
 
   @Column({ nullable: true })
-  TIPOV: string | null;
+  tipov: string | null;
 
   @Column({ nullable: true })
-  VAL_SALDO: number | null;
+  valSaldo: number | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 }
