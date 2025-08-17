@@ -17,7 +17,11 @@ export class ConfigCapturaService extends BaseAuthenticatedService<ConfigCaptura
     super(repository);
   }
 
-  async createConfigCaptura(dto: CreateConfigCapturaDto, key: string, schema = 'public') {
+  async createConfigCaptura(
+    dto: CreateConfigCapturaDto,
+    key: string,
+    schema = 'public',
+  ) {
     return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
@@ -29,7 +33,12 @@ export class ConfigCapturaService extends BaseAuthenticatedService<ConfigCaptura
     return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigCaptura(id: string, dto: UpdateConfigCapturaDto, key: string, schema = 'public') {
+  async updateConfigCaptura(
+    id: string,
+    dto: UpdateConfigCapturaDto,
+    key: string,
+    schema = 'public',
+  ) {
     return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

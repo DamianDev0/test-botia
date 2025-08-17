@@ -4,7 +4,6 @@ import { Repository } from 'typeorm';
 import { BaseAuthenticatedService } from 'src/macrollantas/common/services/base-authenticated.service';
 import { ConfigDocumento } from '../entities/config-documento.entity';
 import { CreateConfigDocumentoDto } from '../dto/create-config-documento.dto';
-import { UpdateConfigDocumentoDto } from '../dto/update-config-documento.dto';
 
 @Injectable()
 export class ConfigDocumentoService extends BaseAuthenticatedService<ConfigDocumento> {
@@ -17,7 +16,11 @@ export class ConfigDocumentoService extends BaseAuthenticatedService<ConfigDocum
     super(repository);
   }
 
-  async createConfigDocumento(dto: CreateConfigDocumentoDto, key: string, schema = 'public') {
+  async createConfigDocumento(
+    dto: CreateConfigDocumentoDto,
+    key: string,
+    schema = 'public',
+  ) {
     return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
@@ -27,13 +30,5 @@ export class ConfigDocumentoService extends BaseAuthenticatedService<ConfigDocum
 
   async findOneConfigDocumento(id: string, key: string, schema = 'public') {
     return this.findOneWithAuth(id, key, this.entityName, schema);
-  }
-
-  async updateConfigDocumento(
-    id: string,
-    dto: UpdateConfigDocumentoDto,
-    key: string,
-  ) {
-    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

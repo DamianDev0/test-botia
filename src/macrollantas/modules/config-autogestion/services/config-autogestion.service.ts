@@ -4,7 +4,6 @@ import { BaseAuthenticatedService } from 'src/macrollantas/common/services/base-
 import { Repository } from 'typeorm';
 
 import { CreateConfigAutogestionDto } from '../dto/create-config-autogestion.dto';
-import { UpdateConfigAutogestionDto } from '../dto/update-config-autogestion.dto';
 import { ConfigAutogestion } from '../entities/config-autogestion.entity';
 
 @Injectable()
@@ -18,7 +17,11 @@ export class ConfigAutogestionService extends BaseAuthenticatedService<ConfigAut
     super(configAutogestionRepository);
   }
 
-  async createConfigAutogestion(dto: CreateConfigAutogestionDto, key: string, schema = 'public') {
+  async createConfigAutogestion(
+    dto: CreateConfigAutogestionDto,
+    key: string,
+    schema = 'public',
+  ) {
     return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
@@ -28,13 +31,5 @@ export class ConfigAutogestionService extends BaseAuthenticatedService<ConfigAut
 
   async findOneConfigAutogestion(id: string, key: string, schema = 'public') {
     return this.findOneWithAuth(id, key, this.entityName, schema);
-  }
-
-  async updateConfigAutogestion(
-    id: string,
-    dto: UpdateConfigAutogestionDto,
-    key: string,
-  ) {
-    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }
