@@ -30,7 +30,7 @@ export class CreateRomboDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_movimiento: string;
+  idMovimiento: string;
 
   @IsOptional()
   @IsString()

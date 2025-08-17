@@ -5,7 +5,7 @@ export class CreateConfigVistaDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ANCHO: number;
+  ancho: number;
 
   @IsOptional()
   @IsNumber()
@@ -20,32 +20,32 @@ export class CreateConfigVistaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONTAINER: string;
+  container: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  RADIUS: number;
+  radius: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COMPONENTE: string;
+  componente: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  VISIBLE: boolean;
+  visible: boolean;
 
   @IsOptional()
   @IsNumber()
@@ -55,17 +55,17 @@ export class CreateConfigVistaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ALTO: number;
+  alto: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
@@ -75,22 +75,22 @@ export class CreateConfigVistaDto {
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  BORDER: boolean;
+  border: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DOCUMENTO: string;
+  documento: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ORIENTACION: string;
+  orientacion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COLOR: string;
+  color: string;
 
   @IsOptional()
   @IsString()

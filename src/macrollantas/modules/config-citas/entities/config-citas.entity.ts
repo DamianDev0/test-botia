@@ -3,7 +3,7 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG_CITAS')
 export class ConfigCitas extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   sucursal: string | null;

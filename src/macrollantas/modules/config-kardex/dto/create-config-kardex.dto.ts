@@ -5,12 +5,12 @@ export class CreateConfigKardexDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  MULTISELECCION: boolean;
+  multiseleccion: boolean;
 
   @IsOptional()
   @IsString()
@@ -20,27 +20,27 @@ export class CreateConfigKardexDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TITULO: string;
+  titulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  VER: boolean;
+  ver: boolean;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  DESCRIPCION: boolean;
+  descripcion: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
@@ -50,5 +50,5 @@ export class CreateConfigKardexDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TABLA: string;
+  tabla: string;
 }

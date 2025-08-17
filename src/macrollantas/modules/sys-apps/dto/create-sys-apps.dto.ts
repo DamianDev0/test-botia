@@ -5,7 +5,7 @@ export class CreateSysAppsDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  APP: string;
+  app: string;
 
   @IsOptional()
   @IsString()
@@ -15,25 +15,25 @@ export class CreateSysAppsDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ROL: string;
+  rol: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 }

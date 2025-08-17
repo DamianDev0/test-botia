@@ -3,13 +3,13 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('grupos_usuarios')
 export class GruposUsuarios extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   grupo: string | null;
 
   @Column({ nullable: true })
-  INVENTARIOS: number | null;
+  inventarios: number | null;
 
   @Column({ nullable: true })
   administrador: string | null;
@@ -18,10 +18,10 @@ export class GruposUsuarios extends BaseEntity {
   descripcion: string | null;
 
   @Column({ nullable: true })
-  TODASBODEGAS: number | null;
+  todasbodegas: number | null;
 
   @Column({ nullable: true })
-  PERMISOCREDITO: number | null;
+  permisocredito: number | null;
 
   @Column({ nullable: true })
   nombre: string | null;

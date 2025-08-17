@@ -5,95 +5,95 @@ export class CreateTraSaldosDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VAL_COSTO: number;
+  valCosto: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CAN_SALDO: number;
+  canSaldo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CAN_ENTRADAS: number;
+  canEntradas: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SKU: string;
+  sku: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VAL_PRECIO: number;
+  valPrecio: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PERIODO: string;
+  periodo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CAN_SALIDAS: number;
+  canSalidas: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FECHA: string;
+  fecha: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VAL_SALIDAS: number;
+  valSalidas: number;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VAL_INICIAL: number;
+  valInicial: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VAL_ENTRADAS: number;
+  valEntradas: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CAN_INICIAL: number;
+  canInicial: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPOV: string;
+  tipov: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VAL_SALDO: number;
+  valSaldo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 }

@@ -3,26 +3,26 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('VERSIONES DET')
 export class VersionesDet extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  VIDEO: string | null;
+  video: string | null;
 
   @Column({ nullable: true })
-  FOTO: string | null;
+  foto: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ name: 'ID VERSION', nullable: true })
   'ID VERSION': string | null;
 
   @Column({ nullable: true })
-  CARACTERISTICA: string | null;
+  caracteristica: string | null;
 
   @Column({ nullable: true })
-  AUTOR: string | null;
+  autor: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 }

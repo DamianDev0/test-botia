@@ -3,32 +3,32 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG CAPTURA DET')
 export class ConfigCapturaDet extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ nullable: true })
-  PASSWORD: string | null;
+  password: string | null;
 
   @Column({ name: 'TIPO ', nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 
   @Column({ default: true })
-  MAYUSCULA: boolean;
+  mayuscula: boolean;
 
   @Column({ nullable: true })
-  NOMBRE: string | null;
+  nombre: string | null;
 
   @Column({ default: true })
-  VER: boolean;
+  ver: boolean;
 
   @Column({ name: 'VALOR INICIAL', nullable: true })
-  VALOR_INICIAL: string | null;
+  valorInicial: string | null;
 }

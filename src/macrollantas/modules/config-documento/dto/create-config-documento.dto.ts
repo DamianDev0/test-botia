@@ -5,30 +5,30 @@ export class CreateConfigDocumentoDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  FILA: number;
+  fila: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VISTA: string;
+  vista: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DOCUMENTO: string;
+  documento: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ORDEN: string;
+  orden: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  COLUMNA: number;
+  columna: number;
 }

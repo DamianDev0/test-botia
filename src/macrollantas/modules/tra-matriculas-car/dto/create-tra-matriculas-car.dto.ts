@@ -5,37 +5,37 @@ export class CreateTraMatriculasCarDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_MATRICULA: string;
+  idMatricula: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ATRIBUTO: string;
+  atributo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CODIGO: string;
+  codigo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
@@ -45,10 +45,10 @@ export class CreateTraMatriculasCarDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VALOR: string;
+  valor: string;
 }

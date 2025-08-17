@@ -5,47 +5,47 @@ export class CreatePedidosDetDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TIPOGOLPE: number;
+  tipogolpe: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CCOSTOS: string;
+  ccostos: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DESCRIPCION: string;
+  descripcion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  GENERICO: string;
+  generico: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ASEGURADORA: number;
+  aseguradora: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ANULADO: number;
+  anulado: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VENDEDOR: string;
+  vendedor: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CANTIDAD: number;
+  cantidad: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FACTURA: string;
+  factura: string;
 
   @IsOptional()
   @IsString()
@@ -55,60 +55,60 @@ export class CreatePedidosDetDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHAINICIADO: Date;
+  fechainiciado: Date;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_MOVIMIENTO: string;
+  idMovimiento: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VALOR: number;
+  valor: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TARIFAIVA: number;
+  tarifaiva: number;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHATERMINADO: Date;
+  fechaterminado: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VALE: string;
+  vale: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  IMPREVISTO: string;
+  imprevisto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NUMERO: string;
+  numero: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ENTREGADO: number;
+  entregado: number;
 }

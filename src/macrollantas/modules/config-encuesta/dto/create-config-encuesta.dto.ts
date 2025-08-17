@@ -25,7 +25,7 @@ export class CreateConfigEncuestaDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_inicial: Date;
+  fechaInicial: Date;
 
   @IsOptional()
   @IsString()
@@ -35,7 +35,7 @@ export class CreateConfigEncuestaDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_final: Date;
+  fechaFinal: Date;
 
   @IsOptional()
   @IsString()

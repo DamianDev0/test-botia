@@ -3,16 +3,16 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CUESTIONARIOS_R')
 export class CuestionariosR extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  id_sucursal: string | null;
+  idSucursal: string | null;
 
   @Column({ nullable: true })
-  id_empresa: string | null;
+  idEmpresa: string | null;
 
   @Column({ nullable: true })
-  id_pregunta: string | null;
+  idPregunta: string | null;
 
   @Column({ default: true })
   resultado: boolean;
@@ -21,16 +21,16 @@ export class CuestionariosR extends BaseEntity {
   estado: string | null;
 
   @Column({ nullable: true })
-  id_usuario: string | null;
+  idUsuario: string | null;
 
   @Column({ default: true })
-  me_gusta: boolean;
+  meGusta: boolean;
 
   @Column({ nullable: true })
   calificación: number | null;
 
   @Column({ nullable: true })
-  fecha_respuesta: Date | null;
+  fechaRespuesta: Date | null;
 
   @Column({ nullable: true })
   id: string | null;
@@ -45,7 +45,7 @@ export class CuestionariosR extends BaseEntity {
   notas: string | null;
 
   @Column({ nullable: true })
-  url_foto: string | null;
+  urlFoto: string | null;
 
   @Column({ nullable: true })
   respuesta: string | null;

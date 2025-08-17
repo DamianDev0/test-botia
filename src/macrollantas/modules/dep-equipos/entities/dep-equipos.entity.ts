@@ -3,35 +3,35 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('DEP_EQUIPOS')
 export class DepEquipos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ID_EMPRESA: string | null;
+  idEmpresa: string | null;
 
   @Column({ nullable: true })
-  NUMERO: number | null;
+  numero: number | null;
 
   @Column({ nullable: true })
-  TECNICO: string | null;
+  tecnico: string | null;
 
   @Column({ nullable: true })
-  ID_SUCURSAL: string | null;
+  idSucursal: string | null;
 
   @Column({ nullable: true })
-  DELEGADO: string | null;
+  delegado: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  LOGO: string | null;
+  logo: string | null;
 
   @Column({ nullable: true })
-  ID_NICHO: string | null;
+  idNicho: string | null;
 
   @Column({ nullable: true })
-  NOMBRE: string | null;
+  nombre: string | null;
 
   @Column({ nullable: true })
-  ID_EQUIPO: string | null;
+  idEquipo: string | null;
 }

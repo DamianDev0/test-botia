@@ -5,27 +5,27 @@ export class CreateContenidosCapDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_duracion: number;
+  numDuracion: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_titulo: string;
+  nomTitulo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_capitulo: number;
+  numCapitulo: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_clases: number;
+  numClases: number;
 
   @IsOptional()
   @IsString()
@@ -35,5 +35,5 @@ export class CreateContenidosCapDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_contenido: string;
+  idContenido: string;
 }

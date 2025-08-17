@@ -5,22 +5,22 @@ export class CreateTraProcesosTiemposColoresDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO_NICHO: string;
+  tipoNicho: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_empresa: string;
+  codEmpresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_color: string;
+  codColor: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  val_porcentaje1: number;
+  valPorcentaje1: number;
 
   @IsOptional()
   @IsString()
@@ -30,15 +30,15 @@ export class CreateTraProcesosTiemposColoresDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_orden: number;
+  numOrden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_rgb: string;
+  codRgb: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  val_porcentaje2: number;
+  valPorcentaje2: number;
 }

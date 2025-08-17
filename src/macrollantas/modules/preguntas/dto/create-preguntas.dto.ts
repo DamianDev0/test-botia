@@ -35,5 +35,5 @@ export class CreatePreguntasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  tipo_calificacion: string;
+  tipoCalificacion: string;
 }

@@ -5,15 +5,15 @@ export class CreateKeysDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CLAVE: string;
+  clave: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  USUARIO: string;
+  usuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FORMULARIO: string;
+  formulario: string;
 }

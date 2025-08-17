@@ -5,12 +5,12 @@ export class CreateTraMovtosTotDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
@@ -20,12 +20,12 @@ export class CreateTraMovtosTotDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TOTAL: number;
+  total: number;
 
   @IsOptional()
   @IsString()
@@ -35,20 +35,20 @@ export class CreateTraMovtosTotDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_TRA_COTIZACION: string;
+  idTraCotizacion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONCEPTO: string;
+  concepto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NUMERO: string;
+  numero: string;
 }

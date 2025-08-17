@@ -10,12 +10,12 @@ export class CreateVehiculosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE1: string;
+  nombre1: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE2: string;
+  nombre2: string;
 
   @IsOptional()
   @IsString()

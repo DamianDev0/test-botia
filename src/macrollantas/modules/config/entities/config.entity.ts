@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
 @Entity('CONFIG')
 export class Config extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   colorFondoSecundario: string | null;
@@ -66,7 +66,7 @@ export class Config extends BaseEntity {
   idEmpresa: string | null;
 
   @Column({ nullable: true })
-  NICHO: string | null;
+  nicho: string | null;
 
   @Column({ nullable: true })
   colorContrasteFondo: string | null;

@@ -5,7 +5,7 @@ export class CreateConfigRelDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 
   @IsOptional()
   @IsNumber()
@@ -15,7 +15,7 @@ export class CreateConfigRelDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_inicial: Date;
+  fechaInicial: Date;
 
   @IsOptional()
   @IsString()
@@ -25,27 +25,27 @@ export class CreateConfigRelDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  color_fondo: string;
+  colorFondo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_recurso: string;
+  idRecurso: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  size_font: number;
+  sizeFont: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_relacionado: string;
+  idRelacionado: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fecha_final: Date;
+  fechaFinal: Date;
 
   @IsOptional()
   @IsNumber()
@@ -60,5 +60,5 @@ export class CreateConfigRelDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  color_letra: string;
+  colorLetra: string;
 }

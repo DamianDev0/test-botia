@@ -5,42 +5,42 @@ export class CreateTraProcesosTiemposDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  tip_recurso: string;
+  tipRecurso: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_proceso: string;
+  nomProceso: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_empresa: string;
+  codEmpresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_medida: string;
+  codMedida: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_proceso: string;
+  codProceso: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_codigo_proveedor: string;
+  codCodigoProveedor: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_tiempo: number;
+  numTiempo: number;
 
   @IsOptional()
   @IsString()
@@ -50,5 +50,5 @@ export class CreateTraProcesosTiemposDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 }

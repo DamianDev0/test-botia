@@ -5,45 +5,45 @@ export class CreateConfigAutogestionDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NICHO: string;
+  nicho: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBTITULO: string;
+  subtitulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TITULO: string;
+  titulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  VISIBLE: boolean;
+  visible: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  IMAGEN: string;
+  imagen: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ALINEACION: string;
+  alineacion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 }

@@ -3,35 +3,35 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_procesos_tiempos')
 export class TraProcesosTiempos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  tip_recurso: string | null;
+  tipRecurso: string | null;
 
   @Column({ nullable: true })
-  nom_proceso: string | null;
+  nomProceso: string | null;
 
   @Column({ nullable: true })
-  cod_empresa: string | null;
+  codEmpresa: string | null;
 
   @Column({ nullable: true })
-  cod_medida: string | null;
+  codMedida: string | null;
 
   @Column({ nullable: true })
-  cod_proceso: string | null;
+  codProceso: string | null;
 
   @Column({ nullable: true })
-  ind_estado: string | null;
+  indEstado: string | null;
 
   @Column({ nullable: true })
-  cod_codigo_proveedor: string | null;
+  codCodigoProveedor: string | null;
 
   @Column({ nullable: true })
-  num_tiempo: number | null;
+  numTiempo: number | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 }

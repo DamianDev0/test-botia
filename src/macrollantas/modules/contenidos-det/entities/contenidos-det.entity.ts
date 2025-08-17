@@ -3,29 +3,29 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONTENIDOS_DET')
 export class ContenidosDet extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  cod_empresa: string | null;
+  codEmpresa: string | null;
 
   @Column({ nullable: true })
-  ind_tipo: string | null;
+  indTipo: string | null;
 
   @Column({ nullable: true })
-  id_contenido: string | null;
+  idContenido: string | null;
 
   @Column({ nullable: true })
-  cod_sucursal: string | null;
+  codSucursal: string | null;
 
   @Column({ nullable: true })
-  num_orden: number | null;
+  numOrden: number | null;
 
   @Column({ nullable: true })
-  nom_caracteristica: string | null;
+  nomCaracteristica: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  ind_estado: string | null;
+  indEstado: string | null;
 }

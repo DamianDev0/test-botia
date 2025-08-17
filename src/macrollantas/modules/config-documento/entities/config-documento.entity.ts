@@ -3,23 +3,23 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG DOCUMENTO')
 export class ConfigDocumento extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  FILA: number | null;
+  fila: number | null;
 
   @Column({ nullable: true })
-  VISTA: string | null;
+  vista: string | null;
 
   @Column({ nullable: true })
-  DOCUMENTO: string | null;
+  documento: string | null;
 
   @Column({ nullable: true })
-  ORDEN: string | null;
+  orden: string | null;
 
   @Column({ nullable: true })
-  COLUMNA: number | null;
+  columna: number | null;
 }

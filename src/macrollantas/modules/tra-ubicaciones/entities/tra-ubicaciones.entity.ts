@@ -3,28 +3,28 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_ubicaciones')
 export class TraUbicaciones extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  FECHA: Date | null;
+  fecha: Date | null;
 
   @Column({ nullable: true })
-  BODEGA: string | null;
+  bodega: string | null;
 
   @Column({ name: 'CANTIDAD ESCANEADA', nullable: true })
   'CANTIDAD ESCANEADA': number | null;
 
   @Column({ nullable: true })
-  UBICACION: string | null;
+  ubicacion: string | null;
 
   @Column({ nullable: true })
-  USUARIO: string | null;
+  usuario: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  ID: string | null;
+  id: string | null;
 
   @Column({ nullable: true })
   id: string | null;
@@ -33,20 +33,20 @@ export class TraUbicaciones extends BaseEntity {
   'CANTIDAD FISICA': number | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  FILA: number | null;
+  fila: number | null;
 
   @Column({ nullable: true })
-  AREA: string | null;
+  area: string | null;
 
   @Column({ nullable: true })
-  COLUMNA: number | null;
+  columna: number | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  NIVEL: string | null;
+  nivel: string | null;
 }

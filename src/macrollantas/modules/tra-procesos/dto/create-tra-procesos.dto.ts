@@ -5,30 +5,30 @@ export class CreateTraProcesosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_proceso: string;
+  codProceso: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ind_ver: boolean;
+  indVer: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_proceso: string;
+  nomProceso: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_empresa: string;
+  codEmpresa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_orden: number;
+  numOrden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 }

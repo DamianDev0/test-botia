@@ -5,12 +5,12 @@ export class CreateSysRolesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ROL: string;
+  rol: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
@@ -20,10 +20,10 @@ export class CreateSysRolesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 }

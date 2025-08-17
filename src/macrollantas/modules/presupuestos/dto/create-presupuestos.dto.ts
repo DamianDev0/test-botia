@@ -5,7 +5,7 @@ export class CreatePresupuestosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsNumber()
@@ -25,17 +25,17 @@ export class CreatePresupuestosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PROCESO: string;
+  proceso: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TEMPORADA: string;
+  temporada: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsNumber()
@@ -55,5 +55,5 @@ export class CreatePresupuestosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 }

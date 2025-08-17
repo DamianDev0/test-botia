@@ -5,17 +5,17 @@ export class CreateSeePeriodosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PERIODO: string;
+  periodo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FRECUENCIA: string;
+  frecuencia: string;
 
   @IsOptional()
   @IsDateString()
@@ -25,7 +25,7 @@ export class CreateSeePeriodosDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsDateString()
@@ -35,20 +35,20 @@ export class CreateSeePeriodosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MEDIDA: string;
+  medida: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VARIABLE: string;
+  variable: string;
 }

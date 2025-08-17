@@ -5,40 +5,40 @@ export class CreateSeeDatosDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_periodos: Date;
+  fecPeriodos: Date;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_indicadores: Date;
+  fecIndicadores: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_variables: Date;
+  fecVariables: Date;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  DISPOSITIVO: number;
+  dispositivo: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  VARIABLE: number;
+  variable: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  fec_datos: Date;
+  fecDatos: Date;
 }

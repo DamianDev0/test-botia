@@ -5,32 +5,32 @@ export class CreateContenidosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_empresa: string;
+  codEmpresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_tipo: string;
+  indTipo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_contenido: string;
+  idContenido: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  cod_sucursal: string;
+  codSucursal: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_orden: number;
+  numOrden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_caracteristica: string;
+  nomCaracteristica: string;
 
   @IsOptional()
   @IsString()
@@ -40,5 +40,5 @@ export class CreateContenidosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 }

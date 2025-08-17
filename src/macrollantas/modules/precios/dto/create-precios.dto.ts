@@ -5,55 +5,55 @@ export class CreatePreciosDto {
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  SERVICIO?: string;
+  servicio?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  ID?: string;
+  id?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  RANGO2?: number;
+  rango2?: number;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  EMPRESA?: string;
+  empresa?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  MEDIDA1?: number;
+  medida1?: number;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  MEDIDA2?: number;
+  medida2?: number;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  ESTADO?: string;
+  estado?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  SUCURSAL?: string;
+  sucursal?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  RANGO1?: number;
+  rango1?: number;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  EQUIVALE1?: string;
+  equivale1?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  PRECIO?: number;
+  precio?: number;
 }

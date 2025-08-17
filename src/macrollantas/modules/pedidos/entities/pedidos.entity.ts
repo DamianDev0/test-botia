@@ -3,92 +3,92 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('pedidos')
 export class Pedidos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  NIT: string | null;
+  nit: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  BODEGA: string | null;
+  bodega: string | null;
 
   @Column({ nullable: true })
-  IVA: number | null;
+  iva: number | null;
 
   @Column({ nullable: true })
   NÚMERO: string | null;
 
   @Column({ nullable: true })
-  TEMP: string | null;
+  temp: string | null;
 
   @Column({ nullable: true })
-  NOMBRE: string | null;
+  nombre: string | null;
 
   @Column({ nullable: true })
-  OBSERVACIONES: string | null;
+  observaciones: string | null;
 
   @Column({ nullable: true })
-  MERCADEO: number | null;
+  mercadeo: number | null;
 
   @Column({ nullable: true })
-  FECHACREACION: Date | null;
+  fechacreacion: Date | null;
 
   @Column({ nullable: true })
-  IMPRESO: number | null;
+  impreso: number | null;
 
   @Column({ nullable: true })
-  MES: string | null;
+  mes: string | null;
 
   @Column({ nullable: true })
-  LIQUIDAR: number | null;
+  liquidar: number | null;
 
   @Column({ nullable: true })
-  ROMBO: string | null;
+  rombo: string | null;
 
   @Column({ nullable: true })
-  VENDEDOR: string | null;
+  vendedor: string | null;
 
   @Column({ nullable: true })
-  ESPERA: number | null;
+  espera: number | null;
 
   @Column({ nullable: true })
-  PATIO: number | null;
+  patio: number | null;
 
   @Column({ nullable: true })
-  VALORAPROBADO: number | null;
+  valoraprobado: number | null;
 
   @Column({ nullable: true })
-  TITULO: string | null;
+  titulo: string | null;
 
   @Column({ nullable: true })
-  CLAVEUSUARIO: string | null;
+  claveusuario: string | null;
 
   @Column({ nullable: true })
-  CERRADA: number | null;
+  cerrada: number | null;
 
   @Column({ nullable: true })
-  KILOMETRAJE: number | null;
+  kilometraje: number | null;
 
   @Column({ nullable: true })
-  ANULADO: number | null;
+  anulado: number | null;
 
   @Column({ name: 'VALOR PROMO', nullable: true })
   'VALOR PROMO': number | null;
 
   @Column({ nullable: true })
-  TELEFONO: string | null;
+  telefono: string | null;
 
   @Column({ nullable: true })
-  ID_MOVIMIENTO: string | null;
+  idMovimiento: string | null;
 
   @Column({ nullable: true })
-  FECHA: Date | null;
+  fecha: Date | null;
 
   @Column({ nullable: true })
-  PLACA: string | null;
+  placa: string | null;
 
   @Column({ nullable: true })
-  VALOR: number | null;
+  valor: number | null;
 }

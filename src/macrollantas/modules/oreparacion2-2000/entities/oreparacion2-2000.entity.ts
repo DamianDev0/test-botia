@@ -3,65 +3,65 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('OREPARACION2_2000')
 export class Oreparacion22000 extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  FECHAINICIADO: Date | null;
+  fechainiciado: Date | null;
 
   @Column({ nullable: true })
-  ANULADO: number | null;
+  anulado: number | null;
 
   @Column({ nullable: true })
-  VALE: string | null;
+  vale: string | null;
 
   @Column({ nullable: true })
-  CCOSTOS: string | null;
+  ccostos: string | null;
 
   @Column({ nullable: true })
-  FECHATERMINADO: Date | null;
+  fechaterminado: Date | null;
 
   @Column({ nullable: true })
-  FACTURA: string | null;
+  factura: string | null;
 
   @Column({ nullable: true })
-  DESCRIPCION: string | null;
+  descripcion: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ nullable: true })
-  TIPOGOLPE: number | null;
+  tipogolpe: number | null;
 
   @Column({ nullable: true })
-  VALOR: number | null;
+  valor: number | null;
 
   @Column({ nullable: true })
-  TARIFAIVA: number | null;
+  tarifaiva: number | null;
 
   @Column({ nullable: true })
-  NUMERO: string | null;
+  numero: string | null;
 
   @Column({ nullable: true })
-  CANTIDAD: number | null;
+  cantidad: number | null;
 
   @Column({ nullable: true })
-  ENTREGADO: number | null;
+  entregado: number | null;
 
   @Column({ nullable: true })
-  ID: string | null;
+  id: string | null;
 
   @Column({ nullable: true })
-  ASEGURADORA: number | null;
+  aseguradora: number | null;
 
   @Column({ nullable: true })
-  GENERICO: string | null;
+  generico: string | null;
 
   @Column({ nullable: true })
-  VENDEDOR: string | null;
+  vendedor: string | null;
 
   @Column({ nullable: true })
-  REFERENCIA: string | null;
+  referencia: string | null;
 
   @Column({ nullable: true })
-  IMPREVISTO: string | null;
+  imprevisto: string | null;
 }

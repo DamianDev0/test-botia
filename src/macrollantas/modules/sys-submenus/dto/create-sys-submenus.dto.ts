@@ -15,32 +15,32 @@ export class CreateSysSubmenusDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBMENU: string;
+  submenu: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VISTA: string;
+  vista: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ROL: string;
+  rol: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsNumber()
@@ -50,7 +50,7 @@ export class CreateSysSubmenusDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
@@ -60,10 +60,10 @@ export class CreateSysSubmenusDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MENU: string;
+  menu: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  APP: string;
+  app: string;
 }

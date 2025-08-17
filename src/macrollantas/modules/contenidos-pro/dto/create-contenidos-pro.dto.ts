@@ -5,27 +5,27 @@ export class CreateContenidosProDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_contenido_sub: string;
+  idContenidoSub: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_empresa: string;
+  idEmpresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_contenido_rec: string;
+  idContenidoRec: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_sucursal: string;
+  idSucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_usuario: string;
+  idUsuario: string;
 
   @IsOptional()
   @IsString()
@@ -35,15 +35,15 @@ export class CreateContenidosProDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_avance: number;
+  numAvance: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_final: number;
+  numFinal: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_inicial: number;
+  numInicial: number;
 }

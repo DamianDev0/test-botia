@@ -3,65 +3,65 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG FORMULARIO')
 export class ConfigFormulario extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 
   @Column({ default: true })
-  EDITABLE: boolean;
+  editable: boolean;
 
   @Column({ nullable: true })
-  FORMATO: string | null;
+  formato: string | null;
 
   @Column({ name: 'VALOR INICIAL', nullable: true })
   'VALOR INICIAL': string | null;
 
   @Column({ nullable: true })
-  VISTA: string | null;
+  vista: string | null;
 
   @Column({ nullable: true })
-  TABLA: string | null;
+  tabla: string | null;
 
   @Column({ default: true })
-  ESCANEAR: boolean;
+  escanear: boolean;
 
   @Column({ nullable: true })
-  MINIMO: number | null;
+  minimo: number | null;
 
   @Column({ nullable: true })
-  FORMULA: string | null;
+  formula: string | null;
 
   @Column({ default: true })
-  REQUERIDO: boolean;
+  requerido: boolean;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ name: 'BASE DATOS', nullable: true })
   'BASE DATOS': string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  DESCRIPCION: string | null;
+  descripcion: string | null;
 
   @Column({ name: 'TIPO DATO', nullable: true })
   'TIPO DATO': string | null;
 
   @Column({ nullable: true })
-  MAXIMO: number | null;
+  maximo: number | null;
 
   @Column({ nullable: true })
-  CAMPO: string | null;
+  campo: string | null;
 
   @Column({ default: true })
-  VISIBLE: boolean;
+  visible: boolean;
 
   @Column({ default: true })
-  CLAVE: boolean;
+  clave: boolean;
 }

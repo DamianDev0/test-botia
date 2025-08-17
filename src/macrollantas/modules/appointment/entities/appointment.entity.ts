@@ -3,10 +3,10 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CITAS')
 export class Citas extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  fecha_string: string | null;
+  fechaString: string | null;
 
   @Column({ nullable: true })
   estado: string | null;
@@ -21,7 +21,7 @@ export class Citas extends BaseEntity {
   fecha: Date | null;
 
   @Column({ nullable: true })
-  id_movimiento: string | null;
+  idMovimiento: string | null;
 
   @Column({ nullable: true })
   hora: string | null;

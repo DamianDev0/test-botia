@@ -3,14 +3,14 @@ import { Entity, Column, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
 @Entity('CLAVES')
 export class Claves extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  CLAVE: string | null;
+  clave: string | null;
 
   @Column({ nullable: true })
-  USUARIO: string | null;
+  usuario: string | null;
 
   @Column({ nullable: true })
-  FORMULARIO: string | null;
+  formulario: string | null;
 }

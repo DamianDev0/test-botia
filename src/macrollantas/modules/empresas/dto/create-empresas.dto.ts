@@ -5,40 +5,40 @@ export class CreateEmpresasDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DIRECCION: string;
+  direccion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NICHO: string;
+  nicho: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TELEFONO: string;
+  telefono: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REPRESENTANTE: string;
+  representante: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE: string;
+  nombre: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 }

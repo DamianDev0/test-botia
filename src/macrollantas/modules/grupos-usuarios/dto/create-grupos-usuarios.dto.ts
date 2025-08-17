@@ -10,7 +10,7 @@ export class CreateGruposUsuariosDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  INVENTARIOS: number;
+  inventarios: number;
 
   @IsOptional()
   @IsString()
@@ -25,12 +25,12 @@ export class CreateGruposUsuariosDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TODASBODEGAS: number;
+  todasbodegas: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PERMISOCREDITO: number;
+  permisocredito: number;
 
   @IsOptional()
   @IsString()

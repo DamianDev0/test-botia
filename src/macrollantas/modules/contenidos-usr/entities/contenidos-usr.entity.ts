@@ -3,26 +3,26 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONTENIDOS_USR')
 export class ContenidosUsr extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ind_estado: string | null;
+  indEstado: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  fec_fecha: Date | null;
+  fecFecha: Date | null;
 
   @Column({ nullable: true })
-  id_contenido: string | null;
+  idContenido: string | null;
 
   @Column({ nullable: true })
-  id_usuario: string | null;
+  idUsuario: string | null;
 
   @Column({ nullable: true })
-  cod_sucursal: string | null;
+  codSucursal: string | null;
 
   @Column({ nullable: true })
-  cod_empresa: string | null;
+  codEmpresa: string | null;
 }

@@ -10,20 +10,20 @@ export class CreateConsecutivosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  NUMERO: number;
+  numero: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DOCUMENTO: string;
+  documento: string;
 }

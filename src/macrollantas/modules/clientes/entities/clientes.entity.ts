@@ -3,50 +3,50 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('clientes')
 export class Clientes extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  NICHO: string | null;
+  nicho: string | null;
 
   @Column({ nullable: true })
-  EMAIL: string | null;
+  email: string | null;
 
   @Column({ nullable: true })
-  TELEFONO: string | null;
+  telefono: string | null;
 
   @Column({ nullable: true })
-  FECHA: string | null;
+  fecha: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  PLACA: string | null;
+  placa: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ name: 'NIT ASOCIADO', nullable: true })
   'NIT ASOCIADO': number | null;
 
   @Column({ nullable: true })
-  NOMBRE: string | null;
+  nombre: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  SEXO: string | null;
+  sexo: string | null;
 
   @Column({ nullable: true })
-  NIT: number | null;
+  nit: number | null;
 
   @Column({ nullable: true })
-  TIPO: string | null;
+  tipo: string | null;
 
   @Column({ nullable: true })
-  QR: string | null;
+  qr: string | null;
 }

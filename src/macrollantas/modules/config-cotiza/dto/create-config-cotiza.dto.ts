@@ -5,35 +5,35 @@ export class CreateConfigCotizaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TABLA: string;
+  tabla: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  VER: boolean;
+  ver: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ICONO: string;
+  icono: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TITULO: string;
+  titulo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 }

@@ -5,22 +5,22 @@ export class CreateTraModelosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MODELO: string;
+  modelo: string;
 
   @IsOptional()
   @IsString()
@@ -30,15 +30,15 @@ export class CreateTraModelosDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MARCA: string;
+  marca: string;
 }

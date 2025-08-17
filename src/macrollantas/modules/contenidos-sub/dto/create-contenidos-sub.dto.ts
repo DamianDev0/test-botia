@@ -5,22 +5,22 @@ export class CreateContenidosSubDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_subcapitulo: number;
+  numSubcapitulo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ind_estado: string;
+  indEstado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  nom_titulo: string;
+  nomTitulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_contenido_cap: string;
+  idContenidoCap: string;
 
   @IsOptional()
   @IsString()
@@ -30,10 +30,10 @@ export class CreateContenidosSubDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_clases: number;
+  numClases: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  num_duracion: number;
+  numDuracion: number;
 }

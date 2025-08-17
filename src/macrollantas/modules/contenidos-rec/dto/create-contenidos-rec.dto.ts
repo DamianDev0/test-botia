@@ -40,12 +40,12 @@ export class CreateContenidosRecDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_rol: string;
+  idRol: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  url_recurso: string;
+  urlRecurso: string;
 
   @IsOptional()
   @IsString()
@@ -90,5 +90,5 @@ export class CreateContenidosRecDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id_usuario: string;
+  idUsuario: string;
 }

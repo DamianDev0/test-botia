@@ -3,34 +3,34 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG REL')
 export class ConfigRel extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ind_estado: string | null;
+  indEstado: string | null;
 
   @Column({ nullable: true })
   alto: number | null;
 
   @Column({ nullable: true })
-  fecha_inicial: Date | null;
+  fechaInicial: Date | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  color_fondo: string | null;
+  colorFondo: string | null;
 
   @Column({ nullable: true })
-  id_recurso: string | null;
+  idRecurso: string | null;
 
   @Column({ nullable: true })
-  size_font: number | null;
+  sizeFont: number | null;
 
   @Column({ nullable: true })
-  id_relacionado: string | null;
+  idRelacionado: string | null;
 
   @Column({ nullable: true })
-  fecha_final: Date | null;
+  fechaFinal: Date | null;
 
   @Column({ nullable: true })
   ancho: number | null;
@@ -39,5 +39,5 @@ export class ConfigRel extends BaseEntity {
   posicion: string | null;
 
   @Column({ nullable: true })
-  color_letra: string | null;
+  colorLetra: string | null;
 }

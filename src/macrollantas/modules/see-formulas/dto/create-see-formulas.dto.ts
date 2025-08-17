@@ -5,50 +5,50 @@ export class CreateSeeFormulasDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  FACTOR: number;
+  factor: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_VARIABLE2: string;
+  idVariable2: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FORMULA: string;
+  formula: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  OPERADOR: string;
+  operador: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_VARIABLE1: string;
+  idVariable1: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID: string;
+  id: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VARIABLE: string;
+  variable: string;
 }

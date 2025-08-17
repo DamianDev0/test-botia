@@ -3,23 +3,23 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('ATRIBUTOS')
 export class Atributos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ default: true })
-  ESTADO: boolean;
+  estado: boolean;
 
   @Column({ nullable: true })
-  VALOR: string | null;
+  valor: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  ATRIBUTO: string | null;
+  atributo: string | null;
 
   @Column({ nullable: true })
-  CATEGORIA: string | null;
+  categoria: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 }

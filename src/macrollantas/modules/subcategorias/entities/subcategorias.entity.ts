@@ -3,32 +3,32 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('subcategorias')
 export class Subcategorias extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ESTADO: string;
+  estado: string;
 
   @Column({ nullable: true })
-  ORDEN: number;
+  orden: number;
 
   @Column({ nullable: true })
-  CATEGORIA: string;
+  categoria: string;
 
   @Column({ nullable: true })
-  SUBCATEGORIA: string;
+  subcategoria: string;
 
   @Column({ nullable: true })
-  EMPRESA: string;
+  empresa: string;
 
   @Column({ nullable: true })
   id: string;
 
   @Column({ nullable: true })
-  SUCURSAL: string;
+  sucursal: string;
 
   @Column({ nullable: true })
-  TIPO: string;
+  tipo: string;
 
   @Column({ nullable: true })
-  ICONO: string;
+  icono: string;
 }

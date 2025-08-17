@@ -3,68 +3,68 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_fisico')
 export class TraFisico extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  PERIODO: string | null;
+  periodo: string | null;
 
   @Column({ name: 'UNIDAD DE MEDIDA', nullable: true })
   'UNIDAD DE MEDIDA': string | null;
 
   @Column({ nullable: true })
-  CANTIDAD: number | null;
+  cantidad: number | null;
 
   @Column({ nullable: true })
-  BODEGA: string | null;
+  bodega: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  ICONO: string | null;
+  icono: string | null;
 
   @Column({ name: 'CANTIDAD POR UNIDAD', nullable: true })
   'CANTIDAD POR UNIDAD': number | null;
 
   @Column({ nullable: true })
-  ID: string | null;
+  id: string | null;
 
   @Column({ name: 'CANTIDAD TOTAL', nullable: true })
   'CANTIDAD TOTAL': number | null;
 
   @Column({ nullable: true })
-  COSTO: number | null;
+  costo: number | null;
 
   @Column({ nullable: true })
-  REFERENCIA: string | null;
+  referencia: string | null;
 
   @Column({ nullable: true })
-  UBICACION: string | null;
+  ubicacion: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ nullable: true })
-  PRECIO: number | null;
+  precio: number | null;
 
   @Column({ nullable: true })
-  FECHA: Date | null;
+  fecha: Date | null;
 
   @Column({ nullable: true })
-  PLU: string | null;
+  plu: string | null;
 
   @Column({ nullable: true })
-  DESCRIPCION: string | null;
+  descripcion: string | null;
 
   @Column({ name: 'SKU PROV', nullable: true })
   'SKU PROV': string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  USUARIO: string | null;
+  usuario: string | null;
 }

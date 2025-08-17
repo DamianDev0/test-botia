@@ -5,15 +5,15 @@ export class CreateTecnicosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  INICIALES: string;
+  iniciales: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SERVICIOS: string;
+  servicios: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE: string;
+  nombre: string;
 }

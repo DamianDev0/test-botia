@@ -3,19 +3,19 @@ import { Entity, Column, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
 @Entity('LISTAP')
 export class ListAp extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ type: 'numeric', nullable: true })
-  PORCENTAJE_FIG: number | null;
+  porcentajeFig: number | null;
 
   @Column({ type: 'numeric', nullable: true })
-  PORCENTAJE_RC: number | null;
+  porcentajeRc: number | null;
 
   @Column({ nullable: true })
-  SKU: string | null;
+  sku: string | null;
 
   @Column({ name: 'PRECIO RC', type: 'numeric', nullable: true })
   'PRECIO RC': number | null;
@@ -24,34 +24,34 @@ export class ListAp extends BaseEntity {
   'PRECIO FIGURA': number | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ type: 'numeric', nullable: true })
-  PORCENTAJE_VEN: number | null;
+  porcentajeVen: number | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  UNIDAD_MEDIDA: string | null;
+  unidadMedida: string | null;
 
   @Column({ type: 'numeric', nullable: true })
-  MEDIDA: number | null;
+  medida: number | null;
 
   @Column({ type: 'numeric', nullable: true })
-  PORCENTAJE_BAS: number | null;
+  porcentajeBas: number | null;
 
   @Column({ nullable: true })
-  CATEGORIA: string | null;
+  categoria: string | null;
 
   @Column({ nullable: true })
-  CALIBRE: string | null;
+  calibre: string | null;
 
   @Column({ type: 'numeric', nullable: true })
-  FACTOR: number | null;
+  factor: number | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ name: 'PRECIO VENTA', type: 'numeric', nullable: true })
   'PRECIO VENTA': number | null;

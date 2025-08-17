@@ -10,12 +10,12 @@ export class CreateConfigDetalleDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FORMATO: string;
+  formato: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  LOCATION: string;
+  location: string;
 
   @IsOptional()
   @IsString()
@@ -25,12 +25,12 @@ export class CreateConfigDetalleDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  FILA: number;
+  fila: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  COLUMNA: number;
+  columna: number;
 
   @IsOptional()
   @IsString()
@@ -40,17 +40,17 @@ export class CreateConfigDetalleDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CAMPO: string;
+  campo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  RADIUS: number;
+  radius: number;
 
   @IsOptional()
   @IsBoolean()
@@ -60,90 +60,90 @@ export class CreateConfigDetalleDto {
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  INDICE: boolean;
+  indice: boolean;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  SIZE: number;
+  size: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DOCUMENTO: string;
+  documento: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TABLA: string;
+  tabla: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COLOR: string;
+  color: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  CONTAINER: boolean;
+  container: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FONT: string;
+  font: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  REQUERIDO: boolean;
+  requerido: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FORMULA: string;
+  formula: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  QUERY: string;
+  query: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ACCION: string;
+  accion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COMPONENTE: string;
+  componente: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  HEIGHT: number;
+  height: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  RUTA: string;
+  ruta: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  VISIBLE: boolean;
+  visible: boolean;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  EDITABLE: boolean;
+  editable: boolean;
 }

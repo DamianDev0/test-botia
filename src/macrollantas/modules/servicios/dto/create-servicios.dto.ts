@@ -5,17 +5,17 @@ export class CreateServiciosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SERVICIO: string;
+  servicio: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CODIGO: string;
+  codigo: string;
 
   @IsOptional()
   @IsString()
@@ -25,22 +25,22 @@ export class CreateServiciosDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  COSTO: number;
+  costo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ICONO: string;
+  icono: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsNumber()
@@ -55,35 +55,35 @@ export class CreateServiciosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBCATEGORIA: string;
+  subcategoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  INVENTARIO: string;
+  inventario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DESCRIPCION: string;
+  descripcion: string;
 }

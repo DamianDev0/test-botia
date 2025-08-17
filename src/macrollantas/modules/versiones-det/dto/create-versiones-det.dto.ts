@@ -5,17 +5,17 @@ export class CreateVersionesDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VIDEO: string;
+  video: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FOTO: string;
+  foto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
@@ -25,15 +25,15 @@ export class CreateVersionesDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CARACTERISTICA: string;
+  caracteristica: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  AUTOR: string;
+  autor: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 }

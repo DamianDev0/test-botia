@@ -5,7 +5,7 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CODIGO: string;
+  codigo: string;
 
   @IsOptional()
   @IsString()
@@ -25,22 +25,22 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  CANTIDAD: number;
+  cantidad: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOTAS: string;
+  notas: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ACCION: string;
+  accion: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOTAS2: string;
+  notas2: string;
 
   @IsOptional()
   @IsNumber()
@@ -55,17 +55,17 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TIEMPO: number;
+  tiempo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  APROBACION: boolean;
+  aprobacion: boolean;
 
   @IsOptional()
   @IsString()
@@ -75,17 +75,17 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  COMPONENTE: string;
+  componente: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  OPERACION: string;
+  operacion: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  IVA: number;
+  iva: number;
 
   @IsOptional()
   @IsString()
@@ -95,12 +95,12 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ORIGEN: string;
+  origen: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_TRA_COTIZACION: string;
+  idTraCotizacion: string;
 
   @IsOptional()
   @IsString()
@@ -110,7 +110,7 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  UNIDAD: string;
+  unidad: string;
 
   @IsOptional()
   @IsNumber()
@@ -135,7 +135,7 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsNumber()
@@ -150,12 +150,12 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOTAS1: string;
+  notas1: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 
   @IsOptional()
   @IsNumber()
@@ -170,7 +170,7 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TECNICO: string;
+  tecnico: string;
 
   @IsOptional()
   @IsString()
@@ -180,7 +180,7 @@ export class CreateTraMovtosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DESCRIPCION: string;
+  descripcion: string;
 
   @IsOptional()
   @IsString()

@@ -3,16 +3,16 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('tra_matriculas')
 export class TraMatriculas extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  CODIGO: string | null;
+  codigo: string | null;
 
   @Column({ nullable: true })
-  ENTRADA: string | null;
+  entrada: string | null;
 
   @Column({ nullable: true })
-  FECHA: Date | null;
+  fecha: Date | null;
 
   @Column({ name: 'NUMERO DOCTO', nullable: true })
   'NUMERO DOCTO': string | null;
@@ -21,44 +21,44 @@ export class TraMatriculas extends BaseEntity {
   'TIPO DOCTO': string | null;
 
   @Column({ nullable: true })
-  SUBCATEGORIA: string | null;
+  subcategoria: string | null;
 
   @Column({ nullable: true })
-  CATEGORIA: string | null;
+  categoria: string | null;
 
   @Column({ nullable: true })
-  NUMERO: string | null;
+  numero: string | null;
 
   @Column({ nullable: true })
-  NIT: string | null;
+  nit: string | null;
 
   @Column({ nullable: true })
-  NOTAS: string | null;
+  notas: string | null;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  SUCURSAL: string | null;
+  sucursal: string | null;
 
   @Column({ default: true })
-  ESTADO: boolean;
+  estado: boolean;
 
   @Column({ nullable: true })
-  REFERENCIA: string | null;
+  referencia: string | null;
 
   @Column({ nullable: true })
-  CANTIDAD: number | null;
+  cantidad: number | null;
 
   @Column({ nullable: true })
-  CONCEPTO: string | null;
+  concepto: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  REMISION: string | null;
+  remision: string | null;
 
   @Column({ nullable: true })
-  FACTURA: string | null;
+  factura: string | null;
 }

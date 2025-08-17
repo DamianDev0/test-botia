@@ -3,26 +3,26 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONFIG COTIZA')
 export class ConfigCotiza extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  EMPRESA: string | null;
+  empresa: string | null;
 
   @Column({ nullable: true })
-  TABLA: string | null;
+  tabla: string | null;
 
   @Column({ default: true })
-  VER: boolean;
+  ver: boolean;
 
   @Column({ nullable: true })
-  ICONO: string | null;
+  icono: string | null;
 
   @Column({ nullable: true })
-  ESTADO: string | null;
+  estado: string | null;
 
   @Column({ nullable: true })
-  TITULO: string | null;
+  titulo: string | null;
 
   @Column({ nullable: true })
-  ORDEN: number | null;
+  orden: number | null;
 }

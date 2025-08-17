@@ -5,50 +5,50 @@ export class CreateConfigBdDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  USUARIO: string;
+  usuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  'NOMBRE BD': string;
+  nombreBd: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  IP: string;
+  ip: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  'ID SERVICIOS': string;
+  idServicios: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONTRASEÑA: string;
+  contrasena: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PUERTO: number;
+  puerto: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESQUEMA: string;
+  esquema: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  'BASE DE DATOS': string;
+  baseDeDatos: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PROTOCOLO: string;
+  protocolo: string;
 }

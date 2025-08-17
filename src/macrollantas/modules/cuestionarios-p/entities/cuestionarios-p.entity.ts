@@ -3,10 +3,10 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CUESTIONARIOS_P')
 export class CuestionariosP extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  id_empresa: string | null;
+  idEmpresa: string | null;
 
   @Column({ nullable: true })
   instructor: string | null;
@@ -15,16 +15,16 @@ export class CuestionariosP extends BaseEntity {
   pregunta: string | null;
 
   @Column({ nullable: true })
-  me_gusta: string | null;
+  meGusta: string | null;
 
   @Column({ nullable: true })
   estado: string | null;
 
   @Column({ nullable: true })
-  id_categoria: string | null;
+  idCategoria: string | null;
 
   @Column({ nullable: true })
-  tipo_calificacion: string | null;
+  tipoCalificacion: string | null;
 
   @Column({ nullable: true })
   id: string | null;
@@ -33,7 +33,7 @@ export class CuestionariosP extends BaseEntity {
   alcance: string | null;
 
   @Column({ nullable: true })
-  url_foto: string | null;
+  urlFoto: string | null;
 
   @Column({ nullable: true })
   contenido: string | null;
@@ -42,7 +42,7 @@ export class CuestionariosP extends BaseEntity {
   opciones: string | null;
 
   @Column({ nullable: true })
-  id_subcategoria: string | null;
+  idSubcategoria: string | null;
 
   @Column({ nullable: true })
   orden: number | null;
@@ -54,8 +54,8 @@ export class CuestionariosP extends BaseEntity {
   titulo: string | null;
 
   @Column({ nullable: true })
-  fecha_pregunta: Date | null;
+  fechaPregunta: Date | null;
 
   @Column({ nullable: true })
-  id_sucursal: string | null;
+  idSucursal: string | null;
 }

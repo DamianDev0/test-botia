@@ -5,25 +5,25 @@ export class CreateTraTipoMotorDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MOTOR: string;
+  motor: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MARCA: string;
+  marca: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRFESA: string;
+  emprfesa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TIPO: string;
+  tipo: string;
 }

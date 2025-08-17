@@ -5,45 +5,45 @@ export class CreateConfigCapturaDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA?: string;
+  empresa?: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO?: string;
+  estado?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN?: number;
+  orden?: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PASSWORD?: string;
+  password?: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional({ name: 'TIPO ' })
-  TIPO?: string;
+  tipo?: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  MAYUSCULA?: boolean;
+  mayuscula?: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE?: string;
+  nombre?: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  VER?: boolean;
+  ver?: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional({ name: 'VALOR INICIAL' })
-  VALOR_INICIAL?: string;
+  valorInicial?: string;
 }

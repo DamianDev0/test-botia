@@ -10,12 +10,12 @@ export class CreateSusuariosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMAIL: string;
+  email: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VENDEDOR: string;
+  vendedor: string;
 
   @IsOptional()
   @IsString()
@@ -45,7 +45,7 @@ export class CreateSusuariosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  clave_acce: string;
+  claveAcce: string;
 
   @IsOptional()
   @IsString()
@@ -55,7 +55,7 @@ export class CreateSusuariosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ruta_foto: string;
+  rutaFoto: string;
 
   @IsOptional()
   @IsNumber()
@@ -65,5 +65,5 @@ export class CreateSusuariosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 }

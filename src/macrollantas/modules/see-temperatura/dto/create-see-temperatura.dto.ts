@@ -5,35 +5,35 @@ export class CreateSeeTemperaturaDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TITULO: string;
+  titulo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOTAS: string;
+  notas: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NUMERO: string;
+  numero: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 }

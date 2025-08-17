@@ -5,22 +5,22 @@ export class CreateListapDto {
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  SUCURSAL?: string;
+  sucursal?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  PORCENTAJE_FIG?: number;
+  porcentajeFig?: number;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  PORCENTAJE_RC?: number;
+  porcentajeRc?: number;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  SKU?: string;
+  sku?: string;
 
   @IsOptional()
   @IsNumber()
@@ -35,12 +35,12 @@ export class CreateListapDto {
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  ESTADO?: string;
+  estado?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  PORCENTAJE_VEN?: number;
+  porcentajeVen?: number;
 
   @IsOptional()
   @IsString()
@@ -50,37 +50,37 @@ export class CreateListapDto {
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  UNIDAD_MEDIDA?: string;
+  unidadMedida?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  MEDIDA?: number;
+  medida?: number;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  PORCENTAJE_BAS?: number;
+  porcentajeBas?: number;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  CATEGORIA?: string;
+  categoria?: string;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  CALIBRE?: string;
+  calibre?: string;
 
   @IsOptional()
   @IsNumber()
   @ApiProperty({ required: false })
-  FACTOR?: number;
+  factor?: number;
 
   @IsOptional()
   @IsString()
   @ApiProperty({ required: false })
-  EMPRESA?: string;
+  empresa?: string;
 
   @IsOptional()
   @IsNumber()

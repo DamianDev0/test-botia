@@ -3,13 +3,13 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CUESTIONARIOS')
 export class Cuestionarios extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   notas: string | null;
 
   @Column({ nullable: true })
-  fecha_respuesta: Date | null;
+  fechaRespuesta: Date | null;
 
   @Column({ nullable: true })
   orden: number | null;
@@ -39,16 +39,16 @@ export class Cuestionarios extends BaseEntity {
   contenido: string | null;
 
   @Column({ nullable: true })
-  url_foto: string | null;
+  urlFoto: string | null;
 
   @Column({ nullable: true })
-  fecha_pregunta: Date | null;
+  fechaPregunta: Date | null;
 
   @Column({ nullable: true })
   opciones: string | null;
 
   @Column({ nullable: true })
-  tipo_calificacion: string | null;
+  tipoCalificacion: string | null;
 
   @Column({ nullable: true })
   pregunta: string | null;
@@ -60,7 +60,7 @@ export class Cuestionarios extends BaseEntity {
   sucursal: string | null;
 
   @Column({ nullable: true })
-  url_video: string | null;
+  urlVideo: string | null;
 
   @Column({ nullable: true })
   categoria: string | null;

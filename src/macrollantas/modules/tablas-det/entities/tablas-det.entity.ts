@@ -3,23 +3,23 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('TABLAS_DET')
 export class TablasDet extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  ID: string | null;
+  id: string | null;
 
   @Column({ nullable: true })
-  ID_TABLAS: string | null;
+  idTablas: string | null;
 
   @Column({ nullable: true })
-  VALOR: string | null;
+  valor: string | null;
 
   @Column({ nullable: true })
-  NOMBRE: string | null;
+  nombre: string | null;
 
   @Column({ nullable: true })
-  CAMPO: string | null;
+  campo: string | null;
 
   @Column({ nullable: true })
-  COMPONENTE: string | null;
+  componente: string | null;
 }

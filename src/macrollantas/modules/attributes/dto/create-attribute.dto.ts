@@ -5,30 +5,30 @@ export class CreateAttributeDto {
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESTADO: boolean;
+  estado: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VALOR: string;
+  valor: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ATRIBUTO: string;
+  atributo: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 }

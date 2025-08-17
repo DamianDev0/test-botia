@@ -10,45 +10,45 @@ export class CreateSeeMedicionesDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MES: number;
+  mes: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_DISPOSITIVO: string;
+  idDispositivo: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PROMEDIO: number;
+  promedio: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  DIA: number;
+  dia: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MINIMO: number;
+  minimo: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  HORA: number;
+  hora: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MAXIMO: number;
+  maximo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ID_VARIABLE: string;
+  idVariable: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FRECUENCIA: string;
+  frecuencia: string;
 }

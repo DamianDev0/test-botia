@@ -3,5 +3,5 @@ import { BaseEntity, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('sucurrales')
 export class Sucurrales extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 }

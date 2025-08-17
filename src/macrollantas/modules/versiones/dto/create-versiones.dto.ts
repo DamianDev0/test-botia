@@ -5,45 +5,45 @@ export class CreateVersionesDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VIDEO: string;
+  video: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  AUTOR: string;
+  autor: string;
 
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VERSION: string;
+  version: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CARACTERISTICA: string;
+  caracteristica: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FOTO: string;
+  foto: string;
 }

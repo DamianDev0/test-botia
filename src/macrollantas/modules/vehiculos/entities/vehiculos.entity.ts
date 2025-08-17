@@ -3,16 +3,16 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('vehiculos')
 export class Vehiculos extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
   telefonos: string | null;
 
   @Column({ nullable: true })
-  NOMBRE1: string | null;
+  nombre1: string | null;
 
   @Column({ nullable: true })
-  NOMBRE2: string | null;
+  nombre2: string | null;
 
   @Column({ nullable: true })
   sucursal: string | null;

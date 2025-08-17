@@ -3,32 +3,32 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('CONTENIDOS_PRO')
 export class ContenidosPro extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  IDP: string;
+  idp: string;
 
   @Column({ nullable: true })
-  id_contenido_sub: string | null;
+  idContenidoSub: string | null;
 
   @Column({ nullable: true })
-  id_empresa: string | null;
+  idEmpresa: string | null;
 
   @Column({ nullable: true })
-  id_contenido_rec: string | null;
+  idContenidoRec: string | null;
 
   @Column({ nullable: true })
-  id_sucursal: string | null;
+  idSucursal: string | null;
 
   @Column({ nullable: true })
-  id_usuario: string | null;
+  idUsuario: string | null;
 
   @Column({ nullable: true })
   id: string | null;
 
   @Column({ nullable: true })
-  num_avance: number | null;
+  numAvance: number | null;
 
   @Column({ nullable: true })
-  num_final: number | null;
+  numFinal: number | null;
 
   @Column({ nullable: true })
-  num_inicial: number | null;
+  numInicial: number | null;
 }

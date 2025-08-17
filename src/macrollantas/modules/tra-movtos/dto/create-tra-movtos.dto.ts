@@ -5,37 +5,37 @@ export class CreateTraMovtosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMAIL: string;
+  email: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  BODEGA: string;
+  bodega: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  USUARIO: string;
+  usuario: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOMBRE: string;
+  nombre: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CATEGORIA: string;
+  categoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA: string;
+  referencia: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TELEFONO: string;
+  telefono: string;
 
   @IsOptional()
   @IsDateString()
@@ -45,22 +45,22 @@ export class CreateTraMovtosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUBCATEGORIA: string;
+  subcategoria: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ASESOR: string;
+  asesor: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  REFERENCIA2: string;
+  referencia2: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ROMBO: string;
+  rombo: string;
 
   @IsOptional()
   @IsString()
@@ -75,22 +75,22 @@ export class CreateTraMovtosDto {
   @IsOptional()
   @IsDateString()
   @ApiPropertyOptional()
-  FECHA: Date;
+  fecha: Date;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  KILOMETRAJE: number;
+  kilometraje: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NIT: string;
+  nit: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MOVIMIENTO: string;
+  movimiento: string;
 
   @IsOptional()
   @IsString()
@@ -105,17 +105,17 @@ export class CreateTraMovtosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  MARCA: string;
+  marca: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  TIEMPO: number;
+  tiempo: number;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  PLAZO: number;
+  plazo: number;
 
   @IsOptional()
   @IsString()
@@ -125,7 +125,7 @@ export class CreateTraMovtosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NUMERO: string;
+  numero: string;
 
   @IsOptional()
   @IsString()
@@ -145,27 +145,27 @@ export class CreateTraMovtosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  PLACA: string;
+  placa: string;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MODELO: number;
+  modelo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CONCEPTO: string;
+  concepto: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
@@ -175,7 +175,7 @@ export class CreateTraMovtosDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  NOTAS: string;
+  notas: string;
 
   @IsOptional()
   @IsString()

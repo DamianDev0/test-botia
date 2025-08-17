@@ -5,17 +5,17 @@ export class CreateConfigFormularioDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  ORDEN: number;
+  orden: number;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  EDITABLE: boolean;
+  editable: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FORMATO: string;
+  formato: string;
 
   @IsOptional()
   @IsString()
@@ -25,37 +25,37 @@ export class CreateConfigFormularioDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  VISTA: string;
+  vista: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  TABLA: string;
+  tabla: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  ESCANEAR: boolean;
+  escanear: boolean;
 
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MINIMO: number;
+  minimo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  FORMULA: string;
+  formula: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  REQUERIDO: boolean;
+  requerido: boolean;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  ESTADO: string;
+  estado: string;
 
   @IsOptional()
   @IsString()
@@ -65,17 +65,17 @@ export class CreateConfigFormularioDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  EMPRESA: string;
+  empresa: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  SUCURSAL: string;
+  sucursal: string;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  DESCRIPCION: string;
+  descripcion: string;
 
   @IsOptional()
   @IsString()
@@ -85,20 +85,20 @@ export class CreateConfigFormularioDto {
   @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
-  MAXIMO: number;
+  maximo: number;
 
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  CAMPO: string;
+  campo: string;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  VISIBLE: boolean;
+  visible: boolean;
 
   @IsOptional()
   @IsBoolean()
   @ApiPropertyOptional()
-  CLAVE: boolean;
+  clave: boolean;
 }
