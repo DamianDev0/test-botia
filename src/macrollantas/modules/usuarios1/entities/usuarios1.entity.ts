@@ -46,7 +46,4 @@ export class Usuarios1 extends BaseEntity {
 
   @Column({ nullable: true })
   bodega: string | null;
-
-  @Column({ nullable: true })
-  id: string | null;
 }

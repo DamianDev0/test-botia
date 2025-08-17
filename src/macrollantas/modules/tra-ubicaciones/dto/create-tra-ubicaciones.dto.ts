@@ -38,11 +38,6 @@ export class CreateTraUbicacionesDto {
   id: string;
 
   @IsOptional()
-  @IsString()
-  @ApiPropertyOptional()
-  id: string;
-
-  @IsOptional()
   @IsNumber()
   @ApiPropertyOptional()
   'CANTIDAD FISICA': number;

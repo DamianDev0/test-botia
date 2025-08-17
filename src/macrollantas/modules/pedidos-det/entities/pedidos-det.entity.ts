@@ -42,9 +42,6 @@ export class PedidosDet extends BaseEntity {
   orden: number | null;
 
   @Column({ nullable: true })
-  id: string | null;
-
-  @Column({ nullable: true })
   idMovimiento: string | null;
 
   @Column({ nullable: true })

@@ -36,9 +36,6 @@ export class SysSubmenus extends BaseEntity {
   id: string | null;
 
   @Column({ nullable: true })
-  id: string | null;
-
-  @Column({ nullable: true })
   menu: string | null;
 
   @Column({ nullable: true })

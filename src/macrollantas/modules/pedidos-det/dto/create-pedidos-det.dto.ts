@@ -65,11 +65,6 @@ export class CreatePedidosDetDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id: string;
-
-  @IsOptional()
-  @IsString()
-  @ApiPropertyOptional()
   idMovimiento: string;
 
   @IsOptional()

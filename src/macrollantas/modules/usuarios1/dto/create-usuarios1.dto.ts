@@ -71,9 +71,4 @@ export class CreateUsuarios1Dto {
   @IsString()
   @ApiPropertyOptional()
   bodega: string;
-
-  @IsOptional()
-  @IsString()
-  @ApiPropertyOptional()
-  id: string;
 }

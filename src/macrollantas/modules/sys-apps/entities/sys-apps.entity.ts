@@ -21,8 +21,5 @@ export class SysApps extends BaseEntity {
   empresa: string | null;
 
   @Column({ nullable: true })
-  id: string | null;
-
-  @Column({ nullable: true })
   estado: string | null;
 }

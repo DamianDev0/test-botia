@@ -26,9 +26,6 @@ export class TraUbicaciones extends BaseEntity {
   @Column({ nullable: true })
   id: string | null;
 
-  @Column({ nullable: true })
-  id: string | null;
-
   @Column({ name: 'CANTIDAD FISICA', nullable: true })
   'CANTIDAD FISICA': number | null;
 

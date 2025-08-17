@@ -30,10 +30,5 @@ export class CreateSysAppsDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id: string;
-
-  @IsOptional()
-  @IsString()
-  @ApiPropertyOptional()
   estado: string;
 }

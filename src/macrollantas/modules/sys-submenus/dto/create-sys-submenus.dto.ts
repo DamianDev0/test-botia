@@ -55,11 +55,6 @@ export class CreateSysSubmenusDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id: string;
-
-  @IsOptional()
-  @IsString()
-  @ApiPropertyOptional()
   menu: string;
 
   @IsOptional()

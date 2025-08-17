@@ -65,11 +65,6 @@ export class CreateTraFisicoDto {
   @IsOptional()
   @IsString()
   @ApiPropertyOptional()
-  id: string;
-
-  @IsOptional()
-  @IsString()
-  @ApiPropertyOptional()
   sucursal: string;
 
   @IsOptional()

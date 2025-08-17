@@ -42,9 +42,6 @@ export class TraFisico extends BaseEntity {
   ubicacion: string | null;
 
   @Column({ nullable: true })
-  id: string | null;
-
-  @Column({ nullable: true })
   sucursal: string | null;
 
   @Column({ nullable: true })
