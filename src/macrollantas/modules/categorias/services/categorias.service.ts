@@ -17,19 +17,19 @@ export class CategoriasService extends BaseAuthenticatedService<Categorias> {
     super(repository);
   }
 
-  async createCategorias(dto: CreateCategoriasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createCategorias(dto: CreateCategoriasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllCategorias(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllCategorias(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneCategorias(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneCategorias(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateCategorias(id: string, dto: UpdateCategoriasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateCategorias(id: string, dto: UpdateCategoriasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

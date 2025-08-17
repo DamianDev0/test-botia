@@ -17,19 +17,19 @@ export class ContenidosUsrService extends BaseAuthenticatedService<ContenidosUsr
     super(repository);
   }
 
-  async createContenidosUsr(dto: CreateContenidosUsrDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createContenidosUsr(dto: CreateContenidosUsrDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllContenidosUsr(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllContenidosUsr(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneContenidosUsr(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneContenidosUsr(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateContenidosUsr(id: string, dto: UpdateContenidosUsrDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateContenidosUsr(id: string, dto: UpdateContenidosUsrDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

@@ -14,19 +14,19 @@ export class FormaPagoService extends BaseAuthenticatedService<FormaPago> {
     super(repository);
   }
 
-  async createFormaPago(dto: FormaPago, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createFormaPago(dto: FormaPago, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllFormaPago(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllFormaPago(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneFormaPago(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneFormaPago(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateFormaPago(id: string, dto: FormaPago, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateFormaPago(id: string, dto: FormaPago, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

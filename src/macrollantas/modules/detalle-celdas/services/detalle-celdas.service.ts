@@ -17,19 +17,19 @@ export class DetalleCeldasService extends BaseAuthenticatedService<DetalleCeldas
     super(repository);
   }
 
-  async createDetalleCeldas(dto: CreateDetalleCeldasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createDetalleCeldas(dto: CreateDetalleCeldasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllDetalleCeldas(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllDetalleCeldas(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneDetalleCeldas(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneDetalleCeldas(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateDetalleCeldas(id: string, dto: UpdateDetalleCeldasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateDetalleCeldas(id: string, dto: UpdateDetalleCeldasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

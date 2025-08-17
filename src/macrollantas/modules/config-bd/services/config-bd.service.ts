@@ -17,19 +17,19 @@ export class ConfigBdService extends BaseAuthenticatedService<ConfigBd> {
     super(repository);
   }
 
-  async createConfigBd(dto: CreateConfigBdDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigBd(dto: CreateConfigBdDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigBd(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigBd(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigBd(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigBd(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigBd(id: string, dto: UpdateConfigBdDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigBd(id: string, dto: UpdateConfigBdDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

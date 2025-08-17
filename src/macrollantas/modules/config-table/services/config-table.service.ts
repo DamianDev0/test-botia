@@ -17,19 +17,19 @@ export class ConfigTableService extends BaseAuthenticatedService<ConfigTable> {
     super(repository);
   }
 
-  async createConfigTable(dto: CreateConfigTableDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigTable(dto: CreateConfigTableDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigTable(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigTable(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigTable(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigTable(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigTable(id: string, dto: UpdateConfigTableDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigTable(id: string, dto: UpdateConfigTableDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

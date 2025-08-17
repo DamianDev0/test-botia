@@ -58,6 +58,27 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Synchronize tenant schemas
+
+Create or update schemas so they contain all tables from the TypeORM entities:
+
+```bash
+# create or update schemas ferrolaminas and macrollantas
+$ npm run sync:schemas -- ferrolaminas macrollantas
+# or using an environment variable
+$ SCHEMAS=ferrolaminas,macrollantas npm run sync:schemas
+```
+
+## Selecting a tenant schema
+
+Every Macrollantas endpoint can target a specific tenant by sending a `schema`
+HTTP header. If omitted, the application falls back to the default `public`
+schema.
+
+```
+curl -H "key: <api-key>" -H "schema: ferrolaminas" https://api.example.com/config-citas
+```
+
 ## Resources
 
 Check out a few resources that may come in handy when working with NestJS:

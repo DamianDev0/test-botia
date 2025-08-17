@@ -17,19 +17,19 @@ export class TraSaldosService extends BaseAuthenticatedService<TraSaldos> {
     super(repository);
   }
 
-  async createTraSaldos(dto: CreateTraSaldosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraSaldos(dto: CreateTraSaldosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraSaldos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraSaldos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraSaldos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraSaldos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraSaldos(id: string, dto: UpdateTraSaldosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraSaldos(id: string, dto: UpdateTraSaldosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

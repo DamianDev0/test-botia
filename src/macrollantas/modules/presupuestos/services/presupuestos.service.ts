@@ -17,19 +17,19 @@ export class PresupuestosService extends BaseAuthenticatedService<Presupuestos> 
     super(repository);
   }
 
-  async createPresupuestos(dto: CreatePresupuestosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createPresupuestos(dto: CreatePresupuestosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllPresupuestos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllPresupuestos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOnePresupuestos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOnePresupuestos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updatePresupuestos(id: string, dto: UpdatePresupuestosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updatePresupuestos(id: string, dto: UpdatePresupuestosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

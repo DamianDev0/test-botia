@@ -14,19 +14,19 @@ export class PreciosService extends BaseAuthenticatedService<Precios> {
     super(repository);
   }
 
-  async createPrecios(dto: Precios, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createPrecios(dto: Precios, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllPrecios(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllPrecios(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOnePrecios(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOnePrecios(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updatePrecios(id: string, dto: Precios, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updatePrecios(id: string, dto: Precios, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

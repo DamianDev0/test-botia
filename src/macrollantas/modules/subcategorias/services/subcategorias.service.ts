@@ -17,19 +17,19 @@ export class SubcategoriasService extends BaseAuthenticatedService<Subcategorias
     super(repository);
   }
 
-  async createSubcategorias(dto: CreateSubcategoriasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSubcategorias(dto: CreateSubcategoriasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSubcategorias(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSubcategorias(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSubcategorias(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSubcategorias(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSubcategorias(id: string, dto: UpdateSubcategoriasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSubcategorias(id: string, dto: UpdateSubcategoriasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

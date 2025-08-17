@@ -17,19 +17,19 @@ export class SucurralesService extends BaseAuthenticatedService<Sucurrales> {
     super(repository);
   }
 
-  async createSucurrales(dto: CreateSucurralesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSucurrales(dto: CreateSucurralesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSucurrales(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSucurrales(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSucurrales(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSucurrales(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSucurrales(id: string, dto: UpdateSucurralesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSucurrales(id: string, dto: UpdateSucurralesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

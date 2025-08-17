@@ -17,19 +17,19 @@ export class NichosService extends BaseAuthenticatedService<Nichos> {
     super(repository);
   }
 
-  async createNichos(dto: CreateNichosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createNichos(dto: CreateNichosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllNichos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllNichos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneNichos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneNichos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateNichos(id: string, dto: UpdateNichosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateNichos(id: string, dto: UpdateNichosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

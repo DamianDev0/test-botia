@@ -17,19 +17,19 @@ export class MotivosService extends BaseAuthenticatedService<Motivos> {
     super(repository);
   }
 
-  async createMotivos(dto: CreateMotivosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createMotivos(dto: CreateMotivosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllMotivos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllMotivos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneMotivos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneMotivos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateMotivos(id: string, dto: UpdateMotivosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateMotivos(id: string, dto: UpdateMotivosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

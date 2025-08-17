@@ -18,19 +18,19 @@ export class AppointmentsService extends BaseAuthenticatedService<Citas> {
     super(appointmentsRepository);
   }
 
-  async createAppointment(dto: CreateAppointmentDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createAppointment(dto: CreateAppointmentDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllAppointments(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllAppointments(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneAppointment(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneAppointment(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateAppointment(id: string, dto: UpdateAppointmentDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateAppointment(id: string, dto: UpdateAppointmentDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

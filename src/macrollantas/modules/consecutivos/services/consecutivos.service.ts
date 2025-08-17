@@ -17,19 +17,19 @@ export class ConsecutivosService extends BaseAuthenticatedService<Consecutivos> 
     super(repository);
   }
 
-  async createConsecutivos(dto: CreateConsecutivosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConsecutivos(dto: CreateConsecutivosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConsecutivos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConsecutivos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConsecutivos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConsecutivos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConsecutivos(id: string, dto: UpdateConsecutivosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConsecutivos(id: string, dto: UpdateConsecutivosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

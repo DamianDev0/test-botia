@@ -17,19 +17,19 @@ export class TraMatriculasService extends BaseAuthenticatedService<TraMatriculas
     super(repository);
   }
 
-  async createTraMatriculas(dto: CreateTraMatriculasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraMatriculas(dto: CreateTraMatriculasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraMatriculas(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraMatriculas(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraMatriculas(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraMatriculas(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraMatriculas(id: string, dto: UpdateTraMatriculasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraMatriculas(id: string, dto: UpdateTraMatriculasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

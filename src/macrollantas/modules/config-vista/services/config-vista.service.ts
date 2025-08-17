@@ -17,19 +17,19 @@ export class ConfigVistaService extends BaseAuthenticatedService<ConfigVista> {
     super(repository);
   }
 
-  async createConfigVista(dto: CreateConfigVistaDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigVista(dto: CreateConfigVistaDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigVista(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigVista(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigVista(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigVista(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigVista(id: string, dto: UpdateConfigVistaDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigVista(id: string, dto: UpdateConfigVistaDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

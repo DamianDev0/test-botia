@@ -17,19 +17,19 @@ export class SeeCostoKwhService extends BaseAuthenticatedService<SeeCostoKwh> {
     super(repository);
   }
 
-  async createSeeCostoKwh(dto: CreateSeeCostoKwhDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSeeCostoKwh(dto: CreateSeeCostoKwhDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSeeCostoKwh(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSeeCostoKwh(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSeeCostoKwh(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSeeCostoKwh(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSeeCostoKwh(id: string, dto: UpdateSeeCostoKwhDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSeeCostoKwh(id: string, dto: UpdateSeeCostoKwhDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

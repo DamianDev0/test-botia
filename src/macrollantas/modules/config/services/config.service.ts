@@ -17,19 +17,19 @@ export class ConfigService extends BaseAuthenticatedService<Config> {
     super(configRepository);
   }
 
-  async createConfig(dto: CreateConfigDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfig(dto: CreateConfigDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigs(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigs(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfig(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfig(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfig(id: string, dto: UpdateConfigDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfig(id: string, dto: UpdateConfigDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

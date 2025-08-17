@@ -17,19 +17,19 @@ export class TraCotizacionDetService extends BaseAuthenticatedService<TraCotizac
     super(repository);
   }
 
-  async createTraCotizacionDet(dto: CreateTraCotizacionDetDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraCotizacionDet(dto: CreateTraCotizacionDetDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraCotizacionDet(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraCotizacionDet(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraCotizacionDet(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraCotizacionDet(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraCotizacionDet(id: string, dto: UpdateTraCotizacionDetDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraCotizacionDet(id: string, dto: UpdateTraCotizacionDetDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

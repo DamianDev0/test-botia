@@ -17,19 +17,19 @@ export class ContenidosCapService extends BaseAuthenticatedService<ContenidosCap
     super(repository);
   }
 
-  async createContenidosCap(dto: CreateContenidosCapDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createContenidosCap(dto: CreateContenidosCapDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllContenidosCap(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllContenidosCap(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneContenidosCap(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneContenidosCap(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateContenidosCap(id: string, dto: UpdateContenidosCapDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateContenidosCap(id: string, dto: UpdateContenidosCapDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

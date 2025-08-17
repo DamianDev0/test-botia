@@ -17,19 +17,19 @@ export class SysAppsService extends BaseAuthenticatedService<SysApps> {
     super(repository);
   }
 
-  async createSysApps(dto: CreateSysAppsDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSysApps(dto: CreateSysAppsDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSysApps(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSysApps(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSysApps(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSysApps(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSysApps(id: string, dto: UpdateSysAppsDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSysApps(id: string, dto: UpdateSysAppsDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

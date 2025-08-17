@@ -17,19 +17,19 @@ export class TraProcesosTiemposService extends BaseAuthenticatedService<TraProce
     super(repository);
   }
 
-  async createTraProcesosTiempos(dto: CreateTraProcesosTiemposDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraProcesosTiempos(dto: CreateTraProcesosTiemposDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraProcesosTiempos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraProcesosTiempos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraProcesosTiempos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraProcesosTiempos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraProcesosTiempos(id: string, dto: UpdateTraProcesosTiemposDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraProcesosTiempos(id: string, dto: UpdateTraProcesosTiemposDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

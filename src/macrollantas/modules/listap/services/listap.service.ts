@@ -14,19 +14,19 @@ export class ListApService extends BaseAuthenticatedService<ListAp> {
     super(repository);
   }
 
-  async createListAp(dto: ListAp, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createListAp(dto: ListAp, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllListAp(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllListAp(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneListAp(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneListAp(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateListAp(id: string, dto: ListAp, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateListAp(id: string, dto: ListAp, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

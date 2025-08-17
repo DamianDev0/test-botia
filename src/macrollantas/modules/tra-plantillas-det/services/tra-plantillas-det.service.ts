@@ -17,19 +17,19 @@ export class TraPlantillasDetService extends BaseAuthenticatedService<TraPlantil
     super(repository);
   }
 
-  async createTraPlantillasDet(dto: CreateTraPlantillasDetDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraPlantillasDet(dto: CreateTraPlantillasDetDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraPlantillasDet(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraPlantillasDet(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraPlantillasDet(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraPlantillasDet(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraPlantillasDet(id: string, dto: UpdateTraPlantillasDetDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraPlantillasDet(id: string, dto: UpdateTraPlantillasDetDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

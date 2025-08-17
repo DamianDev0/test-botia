@@ -165,20 +165,20 @@ export class ${pascal}Service extends BaseAuthenticatedService<${pascal}> {
     super(repository);
   }
 
-  async create${pascal}(dto: Create${pascal}Dto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async create${pascal}(dto: Create${pascal}Dto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAll${pascal}(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAll${pascal}(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOne${pascal}(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOne${pascal}(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async update${pascal}(id: string, dto: Update${pascal}Dto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async update${pascal}(id: string, dto: Update${pascal}Dto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }
 `;

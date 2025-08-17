@@ -17,19 +17,19 @@ export class SysSubmenusService extends BaseAuthenticatedService<SysSubmenus> {
     super(repository);
   }
 
-  async createSysSubmenus(dto: CreateSysSubmenusDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSysSubmenus(dto: CreateSysSubmenusDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSysSubmenus(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSysSubmenus(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSysSubmenus(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSysSubmenus(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSysSubmenus(id: string, dto: UpdateSysSubmenusDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSysSubmenus(id: string, dto: UpdateSysSubmenusDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

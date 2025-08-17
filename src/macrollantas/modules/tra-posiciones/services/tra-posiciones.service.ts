@@ -17,19 +17,19 @@ export class TraPosicionesService extends BaseAuthenticatedService<TraPosiciones
     super(repository);
   }
 
-  async createTraPosiciones(dto: CreateTraPosicionesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraPosiciones(dto: CreateTraPosicionesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraPosiciones(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraPosiciones(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraPosiciones(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraPosiciones(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraPosiciones(id: string, dto: UpdateTraPosicionesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraPosiciones(id: string, dto: UpdateTraPosicionesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

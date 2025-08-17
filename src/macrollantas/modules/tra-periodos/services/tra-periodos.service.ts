@@ -17,19 +17,19 @@ export class TraPeriodosService extends BaseAuthenticatedService<TraPeriodos> {
     super(repository);
   }
 
-  async createTraPeriodos(dto: CreateTraPeriodosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraPeriodos(dto: CreateTraPeriodosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraPeriodos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraPeriodos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraPeriodos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraPeriodos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraPeriodos(id: string, dto: UpdateTraPeriodosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraPeriodos(id: string, dto: UpdateTraPeriodosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

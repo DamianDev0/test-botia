@@ -17,19 +17,19 @@ export class TraDetallesService extends BaseAuthenticatedService<TraDetalles> {
     super(repository);
   }
 
-  async createTraDetalles(dto: CreateTraDetallesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraDetalles(dto: CreateTraDetallesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraDetalles(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraDetalles(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraDetalles(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraDetalles(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraDetalles(id: string, dto: UpdateTraDetallesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraDetalles(id: string, dto: UpdateTraDetallesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

@@ -17,19 +17,19 @@ export class EncuestaService extends BaseAuthenticatedService<Encuesta> {
     super(repository);
   }
 
-  async createEncuesta(dto: CreateEncuestaDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createEncuesta(dto: CreateEncuestaDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllEncuesta(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllEncuesta(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneEncuesta(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneEncuesta(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateEncuesta(id: string, dto: UpdateEncuestaDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateEncuesta(id: string, dto: UpdateEncuestaDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }
