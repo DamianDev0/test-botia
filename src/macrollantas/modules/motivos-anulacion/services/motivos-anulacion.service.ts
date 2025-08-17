@@ -17,19 +17,19 @@ export class MotivosAnulacionService extends BaseAuthenticatedService<MotivosAnu
     super(repository);
   }
 
-  async createMotivosAnulacion(dto: CreateMotivosAnulacionDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createMotivosAnulacion(dto: CreateMotivosAnulacionDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllMotivosAnulacion(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllMotivosAnulacion(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneMotivosAnulacion(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneMotivosAnulacion(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateMotivosAnulacion(id: string, dto: UpdateMotivosAnulacionDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateMotivosAnulacion(id: string, dto: UpdateMotivosAnulacionDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

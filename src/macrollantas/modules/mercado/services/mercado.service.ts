@@ -17,19 +17,19 @@ export class MercadoService extends BaseAuthenticatedService<Mercado> {
     super(repository);
   }
 
-  async createMercado(dto: CreateMercadoDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createMercado(dto: CreateMercadoDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllMercado(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllMercado(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneMercado(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneMercado(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateMercado(id: string, dto: UpdateMercadoDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateMercado(id: string, dto: UpdateMercadoDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

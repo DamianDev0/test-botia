@@ -17,19 +17,19 @@ export class TraSjustesService extends BaseAuthenticatedService<TraSjustes> {
     super(repository);
   }
 
-  async createTraSjustes(dto: CreateTraSjustesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraSjustes(dto: CreateTraSjustesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraSjustes(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraSjustes(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraSjustes(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraSjustes(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraSjustes(id: string, dto: UpdateTraSjustesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraSjustes(id: string, dto: UpdateTraSjustesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

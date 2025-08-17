@@ -17,19 +17,19 @@ export class SeeDatosService extends BaseAuthenticatedService<SeeDatos> {
     super(repository);
   }
 
-  async createSeeDatos(dto: CreateSeeDatosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSeeDatos(dto: CreateSeeDatosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSeeDatos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSeeDatos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSeeDatos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSeeDatos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSeeDatos(id: string, dto: UpdateSeeDatosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSeeDatos(id: string, dto: UpdateSeeDatosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

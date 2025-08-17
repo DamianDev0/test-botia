@@ -17,19 +17,19 @@ export class TraReferenciasProveedorService extends BaseAuthenticatedService<Tra
     super(repository);
   }
 
-  async createTraReferenciasProveedor(dto: CreateTraReferenciasProveedorDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraReferenciasProveedor(dto: CreateTraReferenciasProveedorDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraReferenciasProveedor(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraReferenciasProveedor(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraReferenciasProveedor(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraReferenciasProveedor(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraReferenciasProveedor(id: string, dto: UpdateTraReferenciasProveedorDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraReferenciasProveedor(id: string, dto: UpdateTraReferenciasProveedorDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

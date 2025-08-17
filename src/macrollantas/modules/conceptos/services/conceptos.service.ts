@@ -17,19 +17,19 @@ export class ConceptosService extends BaseAuthenticatedService<Conceptos> {
     super(repository);
   }
 
-  async createConceptos(dto: CreateConceptosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConceptos(dto: CreateConceptosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConceptos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConceptos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConceptos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConceptos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConceptos(id: string, dto: UpdateConceptosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConceptos(id: string, dto: UpdateConceptosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

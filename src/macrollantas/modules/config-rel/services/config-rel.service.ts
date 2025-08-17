@@ -17,19 +17,19 @@ export class ConfigRelService extends BaseAuthenticatedService<ConfigRel> {
     super(repository);
   }
 
-  async createConfigRel(dto: CreateConfigRelDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigRel(dto: CreateConfigRelDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigRel(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigRel(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigRel(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigRel(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigRel(id: string, dto: UpdateConfigRelDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigRel(id: string, dto: UpdateConfigRelDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

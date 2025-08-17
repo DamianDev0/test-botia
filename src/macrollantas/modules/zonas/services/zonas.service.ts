@@ -17,19 +17,19 @@ export class ZonasService extends BaseAuthenticatedService<Zonas> {
     super(repository);
   }
 
-  async createZonas(dto: CreateZonasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createZonas(dto: CreateZonasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllZonas(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllZonas(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneZonas(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneZonas(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateZonas(id: string, dto: UpdateZonasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateZonas(id: string, dto: UpdateZonasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

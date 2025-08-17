@@ -17,19 +17,19 @@ export class ConfigCotizaService extends BaseAuthenticatedService<ConfigCotiza> 
     super(repository);
   }
 
-  async createConfigCotiza(dto: CreateConfigCotizaDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigCotiza(dto: CreateConfigCotizaDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigCotiza(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigCotiza(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigCotiza(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigCotiza(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigCotiza(id: string, dto: UpdateConfigCotizaDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigCotiza(id: string, dto: UpdateConfigCotizaDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

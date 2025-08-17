@@ -17,19 +17,19 @@ export class TraMarcasService extends BaseAuthenticatedService<TraMarcas> {
     super(repository);
   }
 
-  async createTraMarcas(dto: CreateTraMarcasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraMarcas(dto: CreateTraMarcasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraMarcas(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraMarcas(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraMarcas(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraMarcas(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraMarcas(id: string, dto: UpdateTraMarcasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraMarcas(id: string, dto: UpdateTraMarcasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

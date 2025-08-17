@@ -17,19 +17,19 @@ export class TraProcesosService extends BaseAuthenticatedService<TraProcesos> {
     super(repository);
   }
 
-  async createTraProcesos(dto: CreateTraProcesosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraProcesos(dto: CreateTraProcesosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraProcesos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraProcesos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraProcesos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraProcesos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraProcesos(id: string, dto: UpdateTraProcesosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraProcesos(id: string, dto: UpdateTraProcesosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

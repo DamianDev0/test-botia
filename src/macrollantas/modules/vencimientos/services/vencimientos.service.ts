@@ -17,19 +17,19 @@ export class VencimientosService extends BaseAuthenticatedService<Vencimientos> 
     super(repository);
   }
 
-  async createVencimientos(dto: CreateVencimientosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createVencimientos(dto: CreateVencimientosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllVencimientos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllVencimientos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneVencimientos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneVencimientos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateVencimientos(id: string, dto: UpdateVencimientosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateVencimientos(id: string, dto: UpdateVencimientosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

@@ -17,19 +17,19 @@ export class TraFisicoService extends BaseAuthenticatedService<TraFisico> {
     super(repository);
   }
 
-  async createTraFisico(dto: CreateTraFisicoDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraFisico(dto: CreateTraFisicoDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraFisico(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraFisico(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraFisico(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraFisico(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraFisico(id: string, dto: UpdateTraFisicoDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraFisico(id: string, dto: UpdateTraFisicoDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

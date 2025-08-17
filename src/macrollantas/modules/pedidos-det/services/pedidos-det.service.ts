@@ -17,19 +17,19 @@ export class PedidosDetService extends BaseAuthenticatedService<PedidosDet> {
     super(repository);
   }
 
-  async createPedidosDet(dto: CreatePedidosDetDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createPedidosDet(dto: CreatePedidosDetDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllPedidosDet(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllPedidosDet(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOnePedidosDet(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOnePedidosDet(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updatePedidosDet(id: string, dto: UpdatePedidosDetDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updatePedidosDet(id: string, dto: UpdatePedidosDetDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

@@ -17,19 +17,19 @@ export class ConfigKardexService extends BaseAuthenticatedService<ConfigKardex> 
     super(repository);
   }
 
-  async createConfigKardex(dto: CreateConfigKardexDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigKardex(dto: CreateConfigKardexDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigKardex(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigKardex(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigKardex(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigKardex(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigKardex(id: string, dto: UpdateConfigKardexDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigKardex(id: string, dto: UpdateConfigKardexDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

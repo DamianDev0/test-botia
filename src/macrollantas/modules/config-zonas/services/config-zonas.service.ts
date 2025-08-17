@@ -17,19 +17,19 @@ export class ConfigZonasService extends BaseAuthenticatedService<ConfigZonas> {
     super(repository);
   }
 
-  async createConfigZonas(dto: CreateConfigZonasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigZonas(dto: CreateConfigZonasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigZonas(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigZonas(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigZonas(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigZonas(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigZonas(id: string, dto: UpdateConfigZonasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigZonas(id: string, dto: UpdateConfigZonasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

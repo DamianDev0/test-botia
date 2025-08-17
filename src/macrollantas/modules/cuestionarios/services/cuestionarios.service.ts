@@ -17,19 +17,19 @@ export class CuestionariosService extends BaseAuthenticatedService<Cuestionarios
     super(repository);
   }
 
-  async createCuestionarios(dto: CreateCuestionariosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createCuestionarios(dto: CreateCuestionariosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllCuestionarios(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllCuestionarios(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneCuestionarios(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneCuestionarios(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateCuestionarios(id: string, dto: UpdateCuestionariosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateCuestionarios(id: string, dto: UpdateCuestionariosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

@@ -16,6 +16,7 @@
     "test": "jest",
     "generate:modules": "ts-node src/scripts/generate-modules.ts",
     "generate:export": "ts-node src/scripts/generate-export.ts",
+    "sync:schemas": "ts-node src/scripts/sync-schemas.ts",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",

@@ -17,19 +17,19 @@ export class TraUbicacionesService extends BaseAuthenticatedService<TraUbicacion
     super(repository);
   }
 
-  async createTraUbicaciones(dto: CreateTraUbicacionesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraUbicaciones(dto: CreateTraUbicacionesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraUbicaciones(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraUbicaciones(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraUbicaciones(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraUbicaciones(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraUbicaciones(id: string, dto: UpdateTraUbicacionesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraUbicaciones(id: string, dto: UpdateTraUbicacionesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

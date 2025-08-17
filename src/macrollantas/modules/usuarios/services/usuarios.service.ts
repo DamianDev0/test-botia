@@ -17,19 +17,19 @@ export class UsuariosService extends BaseAuthenticatedService<Usuarios> {
     super(repository);
   }
 
-  async createUsuarios(dto: CreateUsuariosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createUsuarios(dto: CreateUsuariosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllUsuarios(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllUsuarios(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneUsuarios(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneUsuarios(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateUsuarios(id: string, dto: UpdateUsuariosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateUsuarios(id: string, dto: UpdateUsuariosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

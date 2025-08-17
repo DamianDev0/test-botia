@@ -17,19 +17,19 @@ export class ConfigDetalleService extends BaseAuthenticatedService<ConfigDetalle
     super(repository);
   }
 
-  async createConfigDetalle(dto: CreateConfigDetalleDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigDetalle(dto: CreateConfigDetalleDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigDetalle(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigDetalle(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigDetalle(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigDetalle(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigDetalle(id: string, dto: UpdateConfigDetalleDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigDetalle(id: string, dto: UpdateConfigDetalleDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

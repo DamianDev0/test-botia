@@ -17,19 +17,19 @@ export class TraProcesosTiemposColoresService extends BaseAuthenticatedService<T
     super(repository);
   }
 
-  async createTraProcesosTiemposColores(dto: CreateTraProcesosTiemposColoresDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraProcesosTiemposColores(dto: CreateTraProcesosTiemposColoresDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraProcesosTiemposColores(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraProcesosTiemposColores(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraProcesosTiemposColores(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraProcesosTiemposColores(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraProcesosTiemposColores(id: string, dto: UpdateTraProcesosTiemposColoresDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraProcesosTiemposColores(id: string, dto: UpdateTraProcesosTiemposColoresDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

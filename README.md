@@ -58,6 +58,15 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Synchronize tenant schemas
+
+Ensure all tenant schemas have the same tables as the `public` schema:
+
+```bash
+# create or update schemas ferrolaminas and macrollantas
+$ npm run sync:schemas ferrolaminas macrollantas
+```
+
 ## Resources
 
 Check out a few resources that may come in handy when working with NestJS:

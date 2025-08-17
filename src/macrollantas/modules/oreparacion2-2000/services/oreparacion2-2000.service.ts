@@ -17,19 +17,19 @@ export class Oreparacion22000Service extends BaseAuthenticatedService<Oreparacio
     super(repository);
   }
 
-  async createOreparacion22000(dto: CreateOreparacion22000Dto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createOreparacion22000(dto: CreateOreparacion22000Dto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllOreparacion22000(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllOreparacion22000(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneOreparacion22000(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneOreparacion22000(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateOreparacion22000(id: string, dto: UpdateOreparacion22000Dto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateOreparacion22000(id: string, dto: UpdateOreparacion22000Dto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

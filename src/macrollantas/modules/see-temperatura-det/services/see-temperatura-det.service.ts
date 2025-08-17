@@ -17,19 +17,19 @@ export class SeeTemperaturaDetService extends BaseAuthenticatedService<SeeTemper
     super(repository);
   }
 
-  async createSeeTemperaturaDet(dto: CreateSeeTemperaturaDetDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSeeTemperaturaDet(dto: CreateSeeTemperaturaDetDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSeeTemperaturaDet(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSeeTemperaturaDet(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSeeTemperaturaDet(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSeeTemperaturaDet(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSeeTemperaturaDet(id: string, dto: UpdateSeeTemperaturaDetDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSeeTemperaturaDet(id: string, dto: UpdateSeeTemperaturaDetDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

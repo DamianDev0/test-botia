@@ -17,19 +17,19 @@ export class GruposUsuariosService extends BaseAuthenticatedService<GruposUsuari
     super(repository);
   }
 
-  async createGruposUsuarios(dto: CreateGruposUsuariosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createGruposUsuarios(dto: CreateGruposUsuariosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllGruposUsuarios(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllGruposUsuarios(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneGruposUsuarios(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneGruposUsuarios(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateGruposUsuarios(id: string, dto: UpdateGruposUsuariosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateGruposUsuarios(id: string, dto: UpdateGruposUsuariosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

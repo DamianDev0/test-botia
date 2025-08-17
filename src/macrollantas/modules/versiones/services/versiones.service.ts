@@ -17,19 +17,19 @@ export class VersionesService extends BaseAuthenticatedService<Versiones> {
     super(repository);
   }
 
-  async createVersiones(dto: CreateVersionesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createVersiones(dto: CreateVersionesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllVersiones(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllVersiones(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneVersiones(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneVersiones(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateVersiones(id: string, dto: UpdateVersionesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateVersiones(id: string, dto: UpdateVersionesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

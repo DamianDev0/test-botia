@@ -17,19 +17,19 @@ export class TecnicosService extends BaseAuthenticatedService<Tecnicos> {
     super(repository);
   }
 
-  async createTecnicos(dto: CreateTecnicosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTecnicos(dto: CreateTecnicosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTecnicos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTecnicos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTecnicos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTecnicos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTecnicos(id: string, dto: UpdateTecnicosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTecnicos(id: string, dto: UpdateTecnicosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

@@ -17,19 +17,19 @@ export class SeeVariablesDetService extends BaseAuthenticatedService<SeeVariable
     super(repository);
   }
 
-  async createSeeVariablesDet(dto: CreateSeeVariablesDetDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSeeVariablesDet(dto: CreateSeeVariablesDetDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSeeVariablesDet(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSeeVariablesDet(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSeeVariablesDet(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSeeVariablesDet(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSeeVariablesDet(id: string, dto: UpdateSeeVariablesDetDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSeeVariablesDet(id: string, dto: UpdateSeeVariablesDetDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

@@ -17,19 +17,19 @@ export class TraCategoriasService extends BaseAuthenticatedService<TraCategorias
     super(repository);
   }
 
-  async createTraCategorias(dto: CreateTraCategoriasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraCategorias(dto: CreateTraCategoriasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraCategorias(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraCategorias(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraCategorias(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraCategorias(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraCategorias(id: string, dto: UpdateTraCategoriasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraCategorias(id: string, dto: UpdateTraCategoriasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

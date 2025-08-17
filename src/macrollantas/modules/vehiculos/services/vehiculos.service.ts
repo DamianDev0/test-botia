@@ -17,19 +17,19 @@ export class VehiculosService extends BaseAuthenticatedService<Vehiculos> {
     super(repository);
   }
 
-  async createVehiculos(dto: CreateVehiculosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createVehiculos(dto: CreateVehiculosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllVehiculos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllVehiculos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneVehiculos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneVehiculos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateVehiculos(id: string, dto: UpdateVehiculosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateVehiculos(id: string, dto: UpdateVehiculosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

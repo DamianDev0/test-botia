@@ -17,19 +17,19 @@ export class TraReferenciasService extends BaseAuthenticatedService<TraReferenci
     super(repository);
   }
 
-  async createTraReferencias(dto: CreateTraReferenciasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraReferencias(dto: CreateTraReferenciasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraReferencias(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraReferencias(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraReferencias(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraReferencias(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraReferencias(id: string, dto: UpdateTraReferenciasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraReferencias(id: string, dto: UpdateTraReferenciasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

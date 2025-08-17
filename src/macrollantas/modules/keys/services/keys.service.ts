@@ -17,19 +17,19 @@ export class KeysService extends BaseAuthenticatedService<Claves> {
     super(keysRepository);
   }
 
-  async createKey(dto: CreateKeysDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createKey(dto: CreateKeysDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllKeys(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllKeys(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneKey(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneKey(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateKey(id: string, dto: UpdateKeysDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateKey(id: string, dto: UpdateKeysDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

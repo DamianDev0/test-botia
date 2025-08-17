@@ -17,19 +17,19 @@ export class ContenidosService extends BaseAuthenticatedService<Contenidos> {
     super(repository);
   }
 
-  async createContenidos(dto: CreateContenidosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createContenidos(dto: CreateContenidosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllContenidos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllContenidos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneContenidos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneContenidos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateContenidos(id: string, dto: UpdateContenidosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateContenidos(id: string, dto: UpdateContenidosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

@@ -17,19 +17,19 @@ export class SeeMedicionesService extends BaseAuthenticatedService<SeeMediciones
     super(repository);
   }
 
-  async createSeeMediciones(dto: CreateSeeMedicionesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSeeMediciones(dto: CreateSeeMedicionesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSeeMediciones(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSeeMediciones(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSeeMediciones(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSeeMediciones(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSeeMediciones(id: string, dto: UpdateSeeMedicionesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSeeMediciones(id: string, dto: UpdateSeeMedicionesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

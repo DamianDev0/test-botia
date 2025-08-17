@@ -17,19 +17,32 @@ export class ConfigCitasService extends BaseAuthenticatedService<ConfigCitas> {
     super(repository);
   }
 
-  async createConfigCitas(dto: CreateConfigCitasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigCitas(
+    dto: CreateConfigCitasDto,
+    key: string,
+    schema = 'public',
+  ) {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigCitas(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigCitas(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigCitas(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigCitas(
+    id: string,
+    key: string,
+    schema = 'public',
+  ) {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigCitas(id: string, dto: UpdateConfigCitasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigCitas(
+    id: string,
+    dto: UpdateConfigCitasDto,
+    key: string,
+    schema = 'public',
+  ) {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

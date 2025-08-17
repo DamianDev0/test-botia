@@ -17,19 +17,19 @@ export class SeeFormulasService extends BaseAuthenticatedService<SeeFormulas> {
     super(repository);
   }
 
-  async createSeeFormulas(dto: CreateSeeFormulasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSeeFormulas(dto: CreateSeeFormulasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSeeFormulas(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSeeFormulas(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSeeFormulas(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSeeFormulas(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSeeFormulas(id: string, dto: UpdateSeeFormulasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSeeFormulas(id: string, dto: UpdateSeeFormulasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

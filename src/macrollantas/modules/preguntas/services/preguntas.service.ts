@@ -17,19 +17,19 @@ export class PreguntasService extends BaseAuthenticatedService<Preguntas> {
     super(repository);
   }
 
-  async createPreguntas(dto: CreatePreguntasDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createPreguntas(dto: CreatePreguntasDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllPreguntas(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllPreguntas(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOnePreguntas(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOnePreguntas(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updatePreguntas(id: string, dto: UpdatePreguntasDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updatePreguntas(id: string, dto: UpdatePreguntasDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

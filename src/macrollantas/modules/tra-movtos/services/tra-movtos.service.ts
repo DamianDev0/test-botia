@@ -17,19 +17,19 @@ export class TraMovtosService extends BaseAuthenticatedService<TraMovtos> {
     super(repository);
   }
 
-  async createTraMovtos(dto: CreateTraMovtosDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraMovtos(dto: CreateTraMovtosDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraMovtos(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraMovtos(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraMovtos(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraMovtos(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraMovtos(id: string, dto: UpdateTraMovtosDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraMovtos(id: string, dto: UpdateTraMovtosDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

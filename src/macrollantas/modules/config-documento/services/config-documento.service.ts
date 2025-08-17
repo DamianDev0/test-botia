@@ -17,16 +17,16 @@ export class ConfigDocumentoService extends BaseAuthenticatedService<ConfigDocum
     super(repository);
   }
 
-  async createConfigDocumento(dto: CreateConfigDocumentoDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigDocumento(dto: CreateConfigDocumentoDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigDocumento(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigDocumento(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigDocumento(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigDocumento(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
   async updateConfigDocumento(
@@ -34,6 +34,6 @@ export class ConfigDocumentoService extends BaseAuthenticatedService<ConfigDocum
     dto: UpdateConfigDocumentoDto,
     key: string,
   ) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

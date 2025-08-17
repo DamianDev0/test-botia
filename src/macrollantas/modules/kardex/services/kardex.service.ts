@@ -17,19 +17,19 @@ export class KardexService extends BaseAuthenticatedService<Kardex> {
     super(repository);
   }
 
-  async createKardex(dto: CreateKardexDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createKardex(dto: CreateKardexDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllKardex(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllKardex(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneKardex(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneKardex(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateKardex(id: string, dto: UpdateKardexDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateKardex(id: string, dto: UpdateKardexDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

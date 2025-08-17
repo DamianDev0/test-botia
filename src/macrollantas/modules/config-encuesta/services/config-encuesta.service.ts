@@ -17,19 +17,19 @@ export class ConfigEncuestaService extends BaseAuthenticatedService<ConfigEncues
     super(repository);
   }
 
-  async createConfigEncuesta(dto: CreateConfigEncuestaDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigEncuesta(dto: CreateConfigEncuestaDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigEncuesta(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigEncuesta(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigEncuesta(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigEncuesta(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigEncuesta(id: string, dto: UpdateConfigEncuestaDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigEncuesta(id: string, dto: UpdateConfigEncuestaDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

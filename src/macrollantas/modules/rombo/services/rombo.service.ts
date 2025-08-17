@@ -17,19 +17,19 @@ export class RomboService extends BaseAuthenticatedService<Rombo> {
     super(repository);
   }
 
-  async createRombo(dto: CreateRomboDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createRombo(dto: CreateRomboDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllRombo(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllRombo(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneRombo(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneRombo(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateRombo(id: string, dto: UpdateRomboDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateRombo(id: string, dto: UpdateRomboDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

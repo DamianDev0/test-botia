@@ -17,19 +17,19 @@ export class ConfigTargetaService extends BaseAuthenticatedService<ConfigTargeta
     super(repository);
   }
 
-  async createConfigTargeta(dto: CreateConfigTargetaDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigTargeta(dto: CreateConfigTargetaDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigTargeta(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigTargeta(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigTargeta(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigTargeta(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateConfigTargeta(id: string, dto: UpdateConfigTargetaDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateConfigTargeta(id: string, dto: UpdateConfigTargetaDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

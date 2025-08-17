@@ -18,16 +18,16 @@ export class ConfigAutogestionService extends BaseAuthenticatedService<ConfigAut
     super(configAutogestionRepository);
   }
 
-  async createConfigAutogestion(dto: CreateConfigAutogestionDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createConfigAutogestion(dto: CreateConfigAutogestionDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllConfigAutogestions(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllConfigAutogestions(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneConfigAutogestion(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneConfigAutogestion(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
   async updateConfigAutogestion(
@@ -35,6 +35,6 @@ export class ConfigAutogestionService extends BaseAuthenticatedService<ConfigAut
     dto: UpdateConfigAutogestionDto,
     key: string,
   ) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

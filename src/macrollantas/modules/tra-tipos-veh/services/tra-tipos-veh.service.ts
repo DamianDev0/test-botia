@@ -17,19 +17,19 @@ export class TraTiposVehService extends BaseAuthenticatedService<TraTiposVeh> {
     super(repository);
   }
 
-  async createTraTiposVeh(dto: CreateTraTiposVehDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraTiposVeh(dto: CreateTraTiposVehDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraTiposVeh(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraTiposVeh(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraTiposVeh(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraTiposVeh(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraTiposVeh(id: string, dto: UpdateTraTiposVehDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraTiposVeh(id: string, dto: UpdateTraTiposVehDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

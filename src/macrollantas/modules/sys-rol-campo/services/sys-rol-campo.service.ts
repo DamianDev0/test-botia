@@ -17,19 +17,19 @@ export class SysRolCampoService extends BaseAuthenticatedService<SysRolCampo> {
     super(repository);
   }
 
-  async createSysRolCampo(dto: CreateSysRolCampoDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSysRolCampo(dto: CreateSysRolCampoDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSysRolCampo(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSysRolCampo(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSysRolCampo(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSysRolCampo(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSysRolCampo(id: string, dto: UpdateSysRolCampoDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSysRolCampo(id: string, dto: UpdateSysRolCampoDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

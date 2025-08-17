@@ -17,19 +17,19 @@ export class TraCilindrajeService extends BaseAuthenticatedService<TraCilindraje
     super(repository);
   }
 
-  async createTraCilindraje(dto: CreateTraCilindrajeDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraCilindraje(dto: CreateTraCilindrajeDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraCilindraje(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraCilindraje(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraCilindraje(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraCilindraje(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraCilindraje(id: string, dto: UpdateTraCilindrajeDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraCilindraje(id: string, dto: UpdateTraCilindrajeDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

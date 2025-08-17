@@ -17,19 +17,19 @@ export class SysRolesService extends BaseAuthenticatedService<SysRoles> {
     super(repository);
   }
 
-  async createSysRoles(dto: CreateSysRolesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createSysRoles(dto: CreateSysRolesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllSysRoles(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllSysRoles(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneSysRoles(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneSysRoles(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateSysRoles(id: string, dto: UpdateSysRolesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateSysRoles(id: string, dto: UpdateSysRolesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }

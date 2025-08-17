@@ -17,19 +17,19 @@ export class TraPartesService extends BaseAuthenticatedService<TraPartes> {
     super(repository);
   }
 
-  async createTraPartes(dto: CreateTraPartesDto, key: string) {
-    return this.createWithAuth(dto, key, this.entityName);
+  async createTraPartes(dto: CreateTraPartesDto, key: string, schema = 'public') {
+    return this.createWithAuth(dto, key, this.entityName, schema);
   }
 
-  async findAllTraPartes(key: string) {
-    return this.findAllWithAuth(key, this.entityName);
+  async findAllTraPartes(key: string, schema = 'public') {
+    return this.findAllWithAuth(key, this.entityName, schema);
   }
 
-  async findOneTraPartes(id: string, key: string) {
-    return this.findOneWithAuth(id, key, this.entityName);
+  async findOneTraPartes(id: string, key: string, schema = 'public') {
+    return this.findOneWithAuth(id, key, this.entityName, schema);
   }
 
-  async updateTraPartes(id: string, dto: UpdateTraPartesDto, key: string) {
-    return this.updateWithAuth(id, dto, key, this.entityName);
+  async updateTraPartes(id: string, dto: UpdateTraPartesDto, key: string, schema = 'public') {
+    return this.updateWithAuth(id, dto, key, this.entityName, schema);
   }
 }
