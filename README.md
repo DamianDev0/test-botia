@@ -60,7 +60,7 @@ $ npm run test:cov
 
 ## Synchronize tenant schemas
 
-Ensure all tenant schemas have the same tables as the `public` schema:
+Create or update schemas so they contain all tables from the TypeORM entities:
 
 ```bash
 # create or update schemas ferrolaminas and macrollantas
