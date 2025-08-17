@@ -2,9 +2,14 @@ import { Client } from 'pg';
 
 async function main() {
   const baseSchema = 'public';
-  const schemas = process.argv.slice(2);
+  const argSchemas = process.argv.slice(2);
+  const envSchemas = process.env.SCHEMAS
+    ? process.env.SCHEMAS.split(/[\s,]+/).filter(Boolean)
+    : [];
+  const schemas = argSchemas.length > 0 ? argSchemas : envSchemas;
   if (schemas.length === 0) {
     console.error('Usage: ts-node sync-schemas.ts schema1 schema2 ...');
+    console.error('   or set SCHEMAS="schema1,schema2" npm run sync:schemas');
     process.exit(1);
   }
 

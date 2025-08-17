@@ -64,7 +64,9 @@ Ensure all tenant schemas have the same tables as the `public` schema:
 
 ```bash
 # create or update schemas ferrolaminas and macrollantas
-$ npm run sync:schemas ferrolaminas macrollantas
+$ npm run sync:schemas -- ferrolaminas macrollantas
+# or using an environment variable
+$ SCHEMAS=ferrolaminas,macrollantas npm run sync:schemas
 ```
 
 ## Selecting a tenant schema
