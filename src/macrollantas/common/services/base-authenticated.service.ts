@@ -35,10 +35,35 @@ export abstract class BaseAuthenticatedService<
     throw new InternalServerErrorException(error);
   }
 
-  async createWithAuth(dto: DeepPartial<T>, key: string, entityName: string) {
+  protected async runWithSchema<R>(
+    schema: string,
+    cb: (repo: Repository<T>) => Promise<R>,
+  ): Promise<R> {
+    const runner = this.repository.manager.connection.createQueryRunner();
+    await runner.connect();
+    try {
+      await runner.query(`SET search_path TO "${schema}", public`);
+      const repo = runner.manager.getRepository<T>(
+        this.repository.metadata.target as any,
+      );
+      return await cb(repo);
+    } finally {
+      await runner.release();
+    }
+  }
+
+  async createWithAuth(
+    dto: DeepPartial<T>,
+    key: string,
+    entityName: string,
+    schema = 'public',
+  ) {
     // this.validateKey(key);
     try {
-      const doc = await this.create(dto);
+      const doc = await this.runWithSchema(schema, async (repo) => {
+        const entity = repo.create(dto);
+        return await repo.save(entity);
+      });
       return this.buildSuccessResponse(
         `Entidad (${entityName}) creado correctamente`,
         doc,
@@ -48,10 +73,14 @@ export abstract class BaseAuthenticatedService<
     }
   }
 
-  async findAllWithAuth(key: string, entityName: string) {
+  async findAllWithAuth(
+    key: string,
+    entityName: string,
+    schema = 'public',
+  ) {
     // this.validateKey(key);
     try {
-      const docs = await this.findAll();
+      const docs = await this.runWithSchema(schema, (repo) => repo.find());
       return this.buildSuccessResponse(
         `Entidads (${entityName}) encontrados correctamente`,
         docs,
@@ -61,12 +90,17 @@ export abstract class BaseAuthenticatedService<
     }
   }
 
-  async findOneWithAuth(id: string, key: string, entityName: string) {
+  async findOneWithAuth(
+    id: string,
+    key: string,
+    entityName: string,
+    schema = 'public',
+  ) {
     // this.validateKey(key);
     try {
-      const entity = await this.repository.findOne({
-        where: { IDP: id } as any,
-      });
+      const entity = await this.runWithSchema(schema, (repo) =>
+        repo.findOne({ where: { IDP: id } as any }),
+      );
       return this.buildSuccessResponse(
         `Entidad (${entityName}) encontrado correctamente`,
         entity,
@@ -75,22 +109,25 @@ export abstract class BaseAuthenticatedService<
       this.handleError(e, 'findOne');
     }
   }
+
   async updateWithAuth(
     id: string,
     dto: QueryDeepPartialEntity<T>,
     key: string,
     entityName: string,
+    schema = 'public',
   ) {
     // this.validateKey(key);
     try {
-      let doc = await this.repository.findOne({ where: { IDP: id } as any });
-
-      if (!doc) {
-        throw new NotFoundException(`Entidad (${entityName}) no encontrado`);
-      }
-
-      await this.repository.update(id, dto);
-      doc = await this.repository.findOne({ where: { IDP: id } as any });
+      const doc = await this.runWithSchema(schema, async (repo) => {
+        let entity = await repo.findOne({ where: { IDP: id } as any });
+        if (!entity) {
+          throw new NotFoundException(`Entidad (${entityName}) no encontrado`);
+        }
+        await repo.update(id, dto);
+        entity = await repo.findOne({ where: { IDP: id } as any });
+        return entity;
+      });
 
       return this.buildSuccessResponse(
         `Entidad (${entityName}) actualizado correctamente`,
